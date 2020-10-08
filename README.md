@@ -45,12 +45,12 @@ DB_PORT = 5432
 
 	[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-> Note: the newly created app has created a super-user with credentials
-> Email: admin@example.com
-> Password: admin
+> Note: the newly created app has created a super-user with credentials  
+> Email: admin@example.com  
+> Password: admin  
 > 
-> You can create a new super-user after logging into the admin panel
-> or using the Heroku CLI `heroku run bash -a <your-app-name>` to run bash on the newly created application.
+> You can create a new super-user after logging into the admin panel  
+> or using the Heroku CLI `heroku run bash -a <your-app-name>` to run bash on the newly created application.  
 > After this you can create the a new super-user using `python manage.py createsuperuser`
 
 - Name your new application
