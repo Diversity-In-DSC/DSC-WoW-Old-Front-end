@@ -1,0 +1,38 @@
+.bg-363636 {background-color: #363636;}
+.bg-202020{background-color: #202020;}
+
+footer{
+    color: white;
+}
+
+.icon {
+    color: white !important;
+    padding: 5px 9px;
+    font-size: 27px;
+    border-radius: 9px 1px;
+    cursor: pointer;
+}
+.icon:hover{
+    opacity: 0.7;
+}
+.facebook {
+    background: #3B5998;
+}
+
+.twitter {
+    background: #55ACEE;
+}
+
+.instagram {
+    background: #125688;
+}
+
+.linkedin {
+    background: #007bb5;
+}
+
+a{text-decoration: none;}
+.b-blue{border-left:3px solid #4285f4 ;}
+.b-yellow{border-left:3px solid #fbbc04 ;}
+.b-green{border-left:3px solid  #0f9d58 ;}
+.b-red{border-left: 3px solid #ea4335;}
