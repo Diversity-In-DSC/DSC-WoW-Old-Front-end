@@ -8,6 +8,13 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import '../css/footer.css'
 function Footer() {
+    function toTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+    }
+
     return (
         <footer>
             <div className="row container-fluid mx-auto py-3 bg-363636">
@@ -25,10 +32,10 @@ function Footer() {
                 <div className="col-sm-6 col-md-3 mb-3">
                     <div className="b-blue"><h4 className="ml-2">FOLLOW US</h4></div>
                     <ul className="list-unstyled list-inline mt-3">
-                        <li className="list-inline-item mr-2"><a className="icon facebook"><FontAwesomeIcon icon={faFacebook} /></a></li>
-                        <li className="list-inline-item mr-2"><a className="icon instagram"><FontAwesomeIcon icon={faInstagram} /></a></li>
-                        <li className="list-inline-item mr-2"><a className="icon twitter"><FontAwesomeIcon icon={faTwitter} /></a></li>
-                        <li className="list-inline-item"><a className="icon linkedin"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                        <li className="list-inline-item mr-2 mb-2"><a className="icon f-facebook"><FontAwesomeIcon icon={faFacebook} /></a></li>
+                        <li className="list-inline-item mr-2 mb-2"><a className="icon f-instagram"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                        <li className="list-inline-item mr-2 mb-2"><a className="icon f-twitter"><FontAwesomeIcon icon={faTwitter} /></a></li>
+                        <li className="list-inline-item mb-2"><a className="icon f-linkedin"><FontAwesomeIcon icon={faLinkedin} /></a></li>
                     </ul>
                 </div>
                 <hr />
@@ -39,7 +46,7 @@ function Footer() {
                     <button className="btn btn-block btn-primary">Submit</button>
                 </div>
             </div>
-            <div className="container-fluid bg-202020 text-center py-3">© 2020 Copyright:<a href="#" className="ml-2">DSC WOW</a></div>
+            <div className="container-fluid bg-202020 text-center py-4">© 2020 Copyright:<a href="#" className="ml-2">DSC WOW</a> <button type="button" id="scrollToTop" className="float-right" onClick={toTop}>☝️</button></div>
         </footer>
     )
 }

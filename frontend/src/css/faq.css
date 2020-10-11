@@ -1,9 +1,9 @@
 .faq_sec{
-    padding: 20px 100px;
+    padding: 20px 48px;
 }
 
 @media(max-width:460px){
     .faq_sec{
-        padding: 20px 10px;
+        padding: 20px 30px;
     }
 }
