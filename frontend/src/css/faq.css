@@ -1,0 +1,9 @@
+.faq_sec{
+    padding: 20px 100px;
+}
+
+@media(max-width:460px){
+    .faq_sec{
+        padding: 20px 10px;
+    }
+}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import '../counter/hero.css' //Specify the file loctaion
-import dscgroup from '../counter/DSCwow.png' //Specify the image loctaion
+import '../css/hero.css' //Specify the file loctaion
+// import dscgroup from '../counter/DSCwow.png' //Specify the image loctaion
 
 
  class Hero extends Component {
@@ -17,8 +17,8 @@ import dscgroup from '../counter/DSCwow.png' //Specify the image loctaion
                 24th November 2020 to 29th November 2020
                 </p>
     
-                </div> <div className="dscgroup"><img src={dscgroup} alt="dscgroup"/></div>
-
+                </div> 
+                {/*<div className="dscgroup"><img src={dscgroup} alt="dscgroup"/></div> */}
                 <button className="btnbadge" >Get WOW badge</button>
                 <button className="btnnews" >Share the News!</button>
                 //add all the social links
