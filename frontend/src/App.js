@@ -20,7 +20,7 @@ function App() {
       {/* <AboutUs /> */}
       {/* <Speaker /> */}
       {/* <Sponsor /> */}
-      {/* <Timeline /> */}
+      <Timeline /> 
       {/* <Contact /> */}
       <Faq />
       <Footer />
