@@ -6,7 +6,7 @@ class AboutUs extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="row container-fluid mt-5 mx-auto px-md-5">
+                <div className="row container-fluid my-5 mx-auto px-md-5">
                     <div className="col-12 col-md-7 p-md-0">
                         <div className="hero">
                             <h1><i>About Us</i></h1>
@@ -23,6 +23,9 @@ class AboutUs extends Component {
                                 peer-to-peer learning environment and build solutions for
                                 local businesses and their community.
                             </p>
+                            <button className="btn btn-primary" style={{background:"#00A452", borderRadius:"32px"}}>
+                                Participating DSCs
+                            </button>
                         </div>
                     </div>
                     <div className="col-12 col-md-5">
