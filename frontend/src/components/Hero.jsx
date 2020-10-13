@@ -16,7 +16,7 @@ class Hero extends Component {
                                 Hands-on learning with Developer Student Clubs Leads
                                 and Google Developer Experts and first look at
                                 some of amazing Community Projects.</p>
-                            <p className="my-4">  24th November 2020 to 29th November 2020</p>
+                            <p className="my-4">  7th December 2020 to 13th December 2020</p>
                             <button className="btnbadge mr-1 mr-md-5" >Get WOW badge</button>
                             <button className="btnnews" >Share the News!</button>
                         </div>
