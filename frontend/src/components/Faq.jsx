@@ -4,27 +4,26 @@ import '../css/faq.css'
 
 function Faq() {
     return (
-        <div className="faq_sec mt-5">
+        <div className="faq_sec my-5">
             <div className="row">
-                <div className="col-md-7">
+                <div className="col-md-7 timeline">
                     <div>
-                        <h2>FAQS</h2>
+                        <h1><i>FAQS</i></h1>
                         <br />
                         <p>Have a question? Let's see if there is something here that helps answer your queries!</p>
                     </div>
                     <div>
                         <div>
-                            <h5>Q. What does DSC WOW stands for?</h5>
-                            <br />
-                            <p>Ans. WOW stands for Worlds of Wonder .it's brainchild event of 80 DSC leads who came
+                            <h5 className="mt-5 mb-2">Q. What does DSC WOW stands for?</h5>
+                            <p>Ans. WOW stands for Worlds of Wonder. It's brainchild event of 80 DSC leads who came
                             together to bring something  interesting for your doorstep.
                             </p>
                         </div>
                         <div>
-                            <h5>Q. What are the perks of attending DSC WOW?</h5>
-                            <br />
-                            <p>Ans. Apart from the variety of sessions by the best speakers in their domains, who also have goodies and swags for peeps
-                                stay tuned for that!</p>
+                            <h5 className="mt-5 mb-2">Q. What are the perks of attending DSC WOW?</h5>
+                            <p>Ans. Apart from the variety of sessions by the best speakers in their domains,
+                                we also have goodies and swags for you peeps
+                                so stay tuned for that!</p>
                         </div>
                     </div>
                 </div>
