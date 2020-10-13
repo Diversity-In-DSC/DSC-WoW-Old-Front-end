@@ -28,7 +28,7 @@ function Faq() {
                     </div>
                 </div>
                 <div className="col-md-5">
-                    <img style={{ width: "100%" }} src={FaqImage} alt="faqImage" />
+                    <img style={{ width: "90%" }} src={FaqImage} alt="faqImage" />
                 </div>
             </div>
         </div>

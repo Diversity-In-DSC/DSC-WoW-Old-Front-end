@@ -21,8 +21,8 @@ function App() {
       {/* <Speaker /> */}
       {/* <Sponsor /> */}
       <Timeline /> 
-      {/* <Contact /> */}
       <Faq />
+      <Contact />
       <Footer />
     </>
   );
