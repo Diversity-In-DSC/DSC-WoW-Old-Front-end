@@ -17,7 +17,7 @@ function App() {
       {/* TODO: complete the component and uncomment */}
       {/* <Navbar /> */}
       <Hero />
-      {/* <AboutUs /> */}
+      <AboutUs /> 
       {/* <Speaker /> */}
       {/* <Sponsor /> */}
       <Timeline /> 

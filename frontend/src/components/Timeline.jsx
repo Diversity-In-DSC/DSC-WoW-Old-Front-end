@@ -8,7 +8,7 @@ function Timeline() {
             <div className="row">
                 <div className="col-md-7">
                     <div className="timeline">
-                        <h2 className='font-italic'>Timeline</h2>
+                        <h1 className='font-italic'>Timeline</h1>
                         <br/>
                         <p>Interested in knowing more about our DSC WOW. <br/>
                             See the flow of our events over here.
