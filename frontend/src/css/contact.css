@@ -1,0 +1,7 @@
+.form-group input, .form-group textarea{
+    border-radius: 32px;
+    width: 400px;
+}
+.form-group textarea {
+    padding: 8px;
+}
