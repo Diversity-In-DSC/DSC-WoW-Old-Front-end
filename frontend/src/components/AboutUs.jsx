@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import '../css/hero.css'
 import aboutus from '../assets/AboutUs.png'
 
 class AboutUs extends Component {
@@ -8,9 +7,9 @@ class AboutUs extends Component {
             <React.Fragment>
                 <div className="row container-fluid my-5 mx-auto px-md-5">
                     <div className="col-12 col-md-7 p-md-0">
-                        <div className="hero">
+                        <div className="timeline">
                             <h1><i>About Us</i></h1>
-                            <p className="mt-5">
+                            <p className="mt-3">
                                 Developer Student Clubs are university based
                                 community groups for students interested in Google
                                 developer technologies. Students from all

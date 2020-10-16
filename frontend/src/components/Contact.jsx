@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import '../css/hero.css'
 import '../css/contact.css'
 import contact from '../assets/contact.png'
 
@@ -11,10 +10,11 @@ class Contact extends Component {
                     <div className="col-12 col-md-7 p-md-0">
                         <div className="timeline">
                             <h1><i>Contact Us</i></h1>
-                            <p className="mt-5">
+                            <p className="my-5">
                                 Have a query that isn’t answered in the FAQ docs?
-                                Want to sponsor DSC WOW? Feel free to reach out
-                                to us by dropping an email.
+                                Want to sponsor DSC WOW?
+                                <br/>
+                                Feel free to reach out to us by dropping an email.
                             </p>
                             <form>
                                 <div class="form-group">
@@ -32,7 +32,6 @@ class Contact extends Component {
                                 <div class="form-group">
                                     <textarea 
                                         className="form-control" 
-                                        rows="3"
                                         placeholder="Message"
                                         ></textarea>
                                 </div>

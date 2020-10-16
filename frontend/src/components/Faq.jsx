@@ -6,7 +6,7 @@ function Faq() {
     return (
         <div className="faq_sec my-5">
             <div className="row">
-                <div className="col-md-7 timeline">
+                <div className="col-md-7">
                     <div>
                         <h1><i>FAQS</i></h1>
                         <br />

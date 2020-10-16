@@ -1,7 +1,12 @@
 .form-group input, .form-group textarea{
     border-radius: 32px;
-    width: 400px;
+    width: 300px;
 }
 .form-group textarea {
-    padding: 8px;
+    padding: 10px;
+}
+@media screen and (max-width: 350px) {
+    .form-group input, .form-group textarea{
+        width: 200px;
+    }
 }
