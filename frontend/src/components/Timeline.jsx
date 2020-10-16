@@ -23,10 +23,10 @@ function Timeline() {
 
             {/* ------- Timeline cards -------- */}
             <div className='container-fluid tl-cards col-md mt-4'>
-                <div className='row'>
+                <div className='row justify-content-center'>
 
                     {/* ------- Day 1 card -------- */}
-                    <div className="card mr-5 mb-3" style={{width:"300px", height:"250px"}}>
+                    <div className="card mr-5 mb-5">
                         <h5 className="card-header text-center text-white" style={{background: "#FE4F5A"}}>
                             Day 1
                         </h5>
@@ -42,7 +42,7 @@ function Timeline() {
                     </div>
 
                     {/* ------- Day 2 card -------- */}
-                    <div className="card mr-5 mb-3" style={{width:"300px", height:"250px"}}>
+                    <div className="card mr-5 mb-5">
                         <h5 className="card-header text-center text-white" style={{background: "#FFBD00"}}>
                             Day 2
                         </h5>
@@ -58,7 +58,7 @@ function Timeline() {
                     </div>
 
                     {/* ------- Day 3 card -------- */}
-                    <div className="card mr-5 mb-3" style={{width:"300px", height:"250px"}}>
+                    <div className="card mr-5 mb-5">
                         <h5 className="card-header text-center text-white" style={{background: "#546DDD"}}>
                             Day 3
                         </h5>
@@ -74,7 +74,7 @@ function Timeline() {
                     </div>
 
                     {/* ------- Day 4 card -------- */}
-                    <div className="card mr-5 mb-3" style={{width:"300px", height:"250px"}}>
+                    <div className="card mr-5 mb-5">
                         <h5 className="card-header text-center text-white" style={{background: "#00A452"}}>
                                     Day 4
                         </h5>

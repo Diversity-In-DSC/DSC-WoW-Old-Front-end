@@ -12,13 +12,13 @@ class Hero extends Component {
                             <h1><i>W.O.W</i></h1>
                             <p className="hero-text mt-5">
                                 Developer Student Clubs WOW brings together
-                                developers from around the groble for talks,
+                                developers from around the globe for talks,
                                 Hands-on learning with Developer Student Clubs Leads
                                 and Google Developer Experts and first look at
                                 some of amazing Community Projects.</p>
                             <p className="my-4">  7th December 2020 to 13th December 2020</p>
-                            <button className="btnbadge mr-1 mr-md-5" >Get WOW badge</button>
-                            <button className="btnnews" >Share the News!</button>
+                            <button className="btn btnbadge mr-1 mr-md-5" >Get WOW badge</button>
+                            <button className="btn btnnews" >Share the News!</button>
                         </div>
                     </div>
                     <div className="col-12 col-md-5">

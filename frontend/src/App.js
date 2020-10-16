@@ -19,7 +19,7 @@ function App() {
       <Hero />
       <AboutUs /> 
       {/* <Speaker /> */}
-      {/* <Sponsor /> */}
+      <Sponsor />
       <Timeline /> 
       <Faq />
       <Contact />
