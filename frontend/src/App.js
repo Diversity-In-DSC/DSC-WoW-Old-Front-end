@@ -18,7 +18,7 @@ function App() {
       {/* <Navbar /> */}
       <Hero />
       <AboutUs /> 
-      {/* <Speaker /> */}
+      <Speaker />
       <Sponsor />
       <Timeline /> 
       <Faq />
