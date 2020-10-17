@@ -54,23 +54,23 @@ font-size: 23px;
   position: fixed;
   top: 200px;
   right:20px;
-  z-index: 2;
+  z-index: 0;
 }
 .instagram {
   position: fixed;
   top: 250px;
   right:20px;
-  z-index: 2;
+  z-index: 0;
 }
 .linkedin{
   position: fixed;
   top: 300px;
   right:20px;
-  z-index: 2;
+  z-index: 0;
 }
 .facebook{
   position: fixed;
   top: 350px;
   right:20px;
-  z-index: 2;
+  z-index: 0;
 }
