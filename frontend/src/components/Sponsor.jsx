@@ -28,7 +28,7 @@ class Sponsor extends Component {
 
                         </div>
                     </div>
-                    <div className="col-12 col-md-5">
+                    <div className="col-12 col-md-5 my-3">
                         <img src={sponsors} alt="Sponsors" className="img-fluid w-75" />
                     </div>
 
