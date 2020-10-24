@@ -6,6 +6,9 @@ class AboutUs extends Component {
         return (
             <React.Fragment>
                 <div className="row container-fluid my-5 mx-auto px-md-5">
+                    <div className="col-12 col-md-5 my-3">
+                        <img src={aboutus} alt="About Us" className="img-fluid" style={{width: "80%"}} />
+                    </div>
                     <div className="col-12 col-md-7 p-md-0">
                         <div className="timeline">
                             <h1><i>About Us</i></h1>
@@ -26,9 +29,6 @@ class AboutUs extends Component {
                                 Participating DSCs
                             </button>
                         </div>
-                    </div>
-                    <div className="col-12 col-md-5">
-                        <img src={aboutus} alt="About Us" className="img-fluid w-75" />
                     </div>
                 </div>
 
