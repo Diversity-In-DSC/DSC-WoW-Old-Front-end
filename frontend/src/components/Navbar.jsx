@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import { Button, Col, Image, Row } from 'react-bootstrap'
 import "../css/navbar.css";
 import dsclogo from "../assets/dsc_linear.png";
+import AboutUs from './AboutUs';
+import Contact from './Contact';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export class Navbar extends Component {
     constructor(props){
@@ -41,12 +44,75 @@ export class Navbar extends Component {
                 className = "overlay"
                 style     = {this.state.style}
             >
-                <a  className = "closebtn" onClick = {this.closeNav}>×</a>
+                <btn className = "closebtn" onClick = {this.closeNav}>×</btn>
                 <div class="overlay-content">
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Clients</a>
-                    <a href="#">Contact</a>
+                    
+                    <h1 style={{marginLeft:"20%"}}>
+                        <Link
+                            activeClass="active"
+                            to="home"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={700}
+                        >Home</Link>
+                        <span style={{color:"red",height:"50px",width:"10%"}} ></span>
+                    </h1>
+                    <h1 style={{marginLeft:"27%"}}><Link
+                            activeClass="active"
+                            to="aboutus"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={700}
+                        >About Us</Link>
+                    </h1>
+                    <h1 style={{marginLeft:"34%"}}><Link
+                            activeClass="active"
+                            to="sponsors"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={700}
+                        >Sponsors</Link>
+                    </h1>
+                    <h1 style={{marginLeft:"41%"}}><Link
+                            activeClass="active"
+                            to="speakers"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={700}
+                        >Speakers</Link>
+                    </h1>
+                    <h1 style={{marginLeft:"48%"}}><Link
+                            activeClass="active"
+                            to="timeline"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={700}
+                        >Timeline</Link>
+                    </h1>
+                    <h1 style={{marginLeft:"55%"}}><Link
+                            activeClass="active"
+                            to="faq"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={700}
+                        >FAQ</Link>
+                    </h1>
+                    
+                    <h1 style={{marginLeft:"62%"}}><Link
+                            activeClass="active"
+                            to="contact"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={700}
+                        >Contact Us</Link>
+                    </h1>
                 </div>
             </div>
         </div>

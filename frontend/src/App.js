@@ -16,13 +16,27 @@ function App() {
     <>
       {/* TODO: complete the component and uncomment */}
       <Navbar />
+      <div id="home">
       <Hero />
-      <AboutUs /> 
-      {/* <Speaker /> */}
+      </div>
+      <div id="aboutus">
+        <AboutUs /> 
+      </div>
+      <div id="speakers">
+      <Speaker />
+      </div>
+      <div id="sponsors">
       <Sponsor />
+      </div>
+      <div id="timeline">
       <Timeline /> 
+      </div>
+      <div id="faq">
       <Faq />
-      <Contact />
+      </div>
+      <div id="contact">
+        <Contact /> 
+      </div>
       <Footer />
     </>
   );

@@ -13,32 +13,34 @@
 
 .overlay-content {
   position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
+  top: 15%;
+  width: auto;
 }
-
-.overlay-content a:focus {
+/* 
+.overlay-content h1:focus {
   font-style: italic;
   font-weight: bold;
   font-size: 100px;
   line-height: 121px;
   color: #000000;
-}
+} */
 
 
-.overlay a {
+.overlay h1 {
   padding: 8px;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 70px;
+  cursor: pointer;
   color: #818181;
   display: block;
   transition: 0.3s;
+  text-decoration: solid;
+  text-transform: capitalize;
+  font-weight: bold;
 }
 
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+.overlay h1:hover, .overlay h1:focus {
+  color: #000000;
 }
 
 .overlay .closebtn {
@@ -46,6 +48,7 @@
   top: 20px;
   right: 45px;
   font-size: 60px;
+  cursor: pointer;
 }
 
 @media screen and (max-height: 450px) {
