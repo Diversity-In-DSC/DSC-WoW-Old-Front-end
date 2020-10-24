@@ -5,26 +5,27 @@ import dsclogo from "../assets/dsc_linear.png";
 import AboutUs from './AboutUs';
 import Contact from './Contact';
 import { Link, animateScroll as scroll } from "react-scroll";
-
+import MenuButton from "./MenuButton";
 export class Navbar extends Component {
     constructor(props){
         super();
         this.state={
-            width : "350%"
+            width : "100%",
+            overflow:"auto"
         }
         this.openNav = this.openNav.bind(this);
         this.closeNav = this.closeNav.bind(this);
     }
 
     openNav() {
-        const style = { width : "100%" };
+        const style = { width : "100%",overflow:"hidden" };
         this.setState({ style });
         document.addEventListener("click", this.closeNav);
     }
     
     closeNav() {
         document.removeEventListener("click", this.closeNav);
-        const style = { width : 0 };
+        const style = { width : 0,overflow:"auto"  };
         this.setState({ style });
     }
 
@@ -35,8 +36,8 @@ export class Navbar extends Component {
                 <Col md={{ span:4 }} >
                     <img src={dsclogo} alt = "DSC_Logo" style={{ width:"100%",marginLeft:"20px",marginTop:"20px"}}/>
                 </Col>
-                <Col md={{ span:1, offset: 7, }} >
-                    <Button style={{justifyItems:"end"}} onClick={this.openNav}>Menu</Button>
+                <Col md={{ span:1, offset: 7, }} style={{marginTop:"20px"}}>
+                    <MenuButton style={{justifyItems:"end"}} onClick={this.openNav} color='black'/>
                 </Col>
             </Row>
             <div
