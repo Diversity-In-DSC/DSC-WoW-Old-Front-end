@@ -48,7 +48,7 @@ export class Navbar extends Component {
                 <btn className = "closebtn" onClick = {this.closeNav}>×</btn>
                 <div class="overlay-content">
                     
-                    <h1 style={{marginLeft:"20%"}}>
+                    <h3 style={{marginLeft:"20%"}}>
                         <Link
                             activeClass="active"
                             to="home"
@@ -58,8 +58,8 @@ export class Navbar extends Component {
                             duration={700}
                         >Home</Link>
                         <span style={{color:"red",height:"50px",width:"10%"}} ></span>
-                    </h1>
-                    <h1 style={{marginLeft:"27%"}}><Link
+                    </h3>
+                    <h3 style={{marginLeft:"27%"}}><Link
                             activeClass="active"
                             to="aboutus"
                             spy={true}
@@ -67,8 +67,8 @@ export class Navbar extends Component {
                             offset={-70}
                             duration={700}
                         >About Us</Link>
-                    </h1>
-                    <h1 style={{marginLeft:"34%"}}><Link
+                    </h3>
+                    <h3 style={{marginLeft:"34%"}}><Link
                             activeClass="active"
                             to="sponsors"
                             spy={true}
@@ -76,8 +76,8 @@ export class Navbar extends Component {
                             offset={-70}
                             duration={700}
                         >Sponsors</Link>
-                    </h1>
-                    <h1 style={{marginLeft:"41%"}}><Link
+                    </h3>
+                    <h3 style={{marginLeft:"41%"}}><Link
                             activeClass="active"
                             to="speakers"
                             spy={true}
@@ -85,8 +85,8 @@ export class Navbar extends Component {
                             offset={-70}
                             duration={700}
                         >Speakers</Link>
-                    </h1>
-                    <h1 style={{marginLeft:"48%"}}><Link
+                    </h3>
+                    <h3 style={{marginLeft:"48%"}}><Link
                             activeClass="active"
                             to="timeline"
                             spy={true}
@@ -94,8 +94,8 @@ export class Navbar extends Component {
                             offset={-70}
                             duration={700}
                         >Timeline</Link>
-                    </h1>
-                    <h1 style={{marginLeft:"55%"}}><Link
+                    </h3>
+                    <h3 style={{marginLeft:"55%"}}><Link
                             activeClass="active"
                             to="faq"
                             spy={true}
@@ -103,9 +103,9 @@ export class Navbar extends Component {
                             offset={-70}
                             duration={700}
                         >FAQ</Link>
-                    </h1>
+                    </h3>
                     
-                    <h1 style={{marginLeft:"62%"}}><Link
+                    <h3 style={{marginLeft:"62%"}}><Link
                             activeClass="active"
                             to="contact"
                             spy={true}
@@ -113,7 +113,7 @@ export class Navbar extends Component {
                             offset={-70}
                             duration={700}
                         >Contact Us</Link>
-                    </h1>
+                    </h3>
                 </div>
             </div>
         </div>
