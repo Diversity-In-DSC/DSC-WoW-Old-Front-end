@@ -7,6 +7,9 @@ class Contact extends Component {
         return (
             <React.Fragment>
                 <div className="row container-fluid my-5 mx-auto px-md-5">
+                    <div className="col-12 col-md-5 my-3">
+                        <img src={contact} alt="Contact Us" className="img-fluid w-75" />
+                    </div>
                     <div className="col-12 col-md-7 p-md-0">
                         <div className="timeline">
                             <h1><i>Contact Us</i></h1>
@@ -38,9 +41,6 @@ class Contact extends Component {
                                 <button type="submit" class="btn btn-primary">Send</button>
                             </form>
                         </div>
-                    </div>
-                    <div className="col-12 col-md-5">
-                        <img src={contact} alt="Contact Us" className="img-fluid w-75" />
                     </div>
                 </div>
 
