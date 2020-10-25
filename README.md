@@ -1,5 +1,40 @@
 # DSC Webathon
+## Frontend
+Frontend is built in React.js and deployed on GCP App engine.
+URL : https://dsc-wow.el.r.appspot.com/
 
+### Deploying on GCP App engine
+- Go the [GCP Console](https://console.cloud.google.com/)
+- Create a new project and give it a cool name.
+- Activate google cloud shell using the cloud shell ![cloud_shell](https://user-images.githubusercontent.com/31778302/97112839-97dfb900-170c-11eb-9cc0-de158a1b7cf4.png) icon on the top right.
+- Clone the repo in cloud shell using `git clone https://github.com/Diversity-In-DSC/dsc-webathon.git`
+- Change working directory to the webathon repo `cd dsc-webathon` 
+- Remove all the unecessary files (all files/folders except `frontend/` directory) `sudo rm -rf <file_name>`
+- Change working directory to the `frontend/` directory `cd frontend/`
+- Install the dependencies `npm install` or `npm i`
+- Build the React.js app `npm run build`
+- Remove all the other files/folder except for the `build/` folder `sudo rm -rf <file_name>`
+- Create a new file named `app.yaml` in the same directory as that of the `build/` folder using any command line editor of your choice: `nano app.yaml`
+- Paste the following contents in the newly created file.
+
+```yaml
+runtime: nodejs12
+handlers:
+- url: /(.*\..+)$
+  static_files: build/\1
+  upload: build/(.*\..+)$
+- url: /.*
+  static_files: build/index.html
+  upload: build/index.html
+```
+
+- Deploy the app on GCP App engine using `gcloud app deploy`
+> Note: You need to be the same directory as that of the `app.yaml` file in order to deploy the app
+- Choose the region where you want to deploy the app. 
+> Mumbai, India region lies at `asia-south1`.
+- Wait, for it deploy and go to deployment URL shown after running `gcloud app deploy` or check the deployment URL using `gcloud app browse`
+
+## Backend
 ### About
 It is an API to help conduct online hackathons/team events. It consists of user auth, team forming and project submission.
 
@@ -12,7 +47,7 @@ The project was initially started a year ago when online hackathons was not a th
 But ever since the pandemic, online events are the only things we are left with.
 
 ### Setup locally
-- Clone the repo using `git clone https://github.com/ShauryaAg/dsc-webathon.git`
+- Clone the repo using `git clone https://github.com/Diversity-In-DSC/dsc-webathon.git`
 - Move into the project folder `cd dsc-webathon/`
 - Create a `.env` file in the project folder
 ```
