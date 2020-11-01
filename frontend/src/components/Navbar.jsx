@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
-import { Button, Col, Image, Row } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap'
 import "../css/navbar.css";
 import dsclogo from "../assets/dsc_linear.png";
-import AboutUs from './AboutUs';
-import Contact from './Contact';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link, animateScroll } from "react-scroll";
 import MenuButton from "./MenuButton";
+import DarkModeButton from './DarkModeButton';
 export class Navbar extends Component {
     constructor(props){
-        super();
+        super(props);
         this.state={
             width : "100%",
             overflow:"auto"
@@ -36,8 +35,9 @@ export class Navbar extends Component {
                 <Col md={{ span:4 }} >
                     <img src={dsclogo} alt = "DSC_Logo" style={{ width:"100%",marginLeft:"20px",marginTop:"20px"}}/>
                 </Col>
-                <Col md={{ span:1, offset: 7, }} style={{marginTop:"20px"}}>
+                <Col md={{ span:1, offset: 7, }} style={{marginTop:"20px", display: 'flex', alignItems: 'center'}}>
                     <MenuButton style={{justifyItems:"end"}} onClick={this.openNav} color='black'/>
+                    <DarkModeButton />
                 </Col>
             </Row>
             <div

@@ -6,11 +6,11 @@ body {
 .bg-202020{background-color: #202020;}
 
 footer{
-    color: white;
+    color: #fff;
 }
 
 .icon {
-    color: white !important;
+    color: #fff !important;
     padding: 5px 9px;
     font-size: 27px;
     border-radius: 9px 1px;
@@ -45,7 +45,7 @@ a{text-decoration: none;}
     background-color: #202020;
     border: none;
     border-radius: 50%;
-    color: white;
+    color: #fff;
     cursor: pointer;
     font-size: 25px;
     width: 48px;
