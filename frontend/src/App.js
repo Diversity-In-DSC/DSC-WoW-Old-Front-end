@@ -1,5 +1,6 @@
 import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
+import  './css/index.css'
 
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'

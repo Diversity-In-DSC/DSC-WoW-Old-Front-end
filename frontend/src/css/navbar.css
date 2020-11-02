@@ -5,8 +5,7 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(255,255,255);
-  background-color: rgba(255,255,255, 1);
+  background-color: var(--background-color);
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -40,7 +39,7 @@
 }
 
 .overlay h1:hover, .overlay h1:focus {
-  color: #000000;
+  color: var(--text-color);
 }
 
 .overlay .closebtn {
@@ -61,5 +60,13 @@
 }
 
 .overlay h2, .overlay p {
-color:white;
+color:var(--background-color);
+}
+
+.darkModeIcon {
+  height: 45px;
+  width: 45px;
+  transform: translateX(20px);
+  cursor: pointer;
+  filter: var(--invert-filter);
 }
