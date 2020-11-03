@@ -1,17 +1,20 @@
 import React from 'react'
 import TimeImage from '../assets/timeline.png'
-import '../css/timeline.css'
+import '../css/timeline.css';
+import Row from 'react-bootstrap/row';
 
 function Timeline() {
     return (
         <div className="faq_sec my-5">
+            <Row md={7} className="mx-5 p-md-0">
+                <h1>Timeline</h1>
+            </Row>
             <div className="row">
                 <div className="col-12 col-md-5 my-3">
                     <img src={TimeImage} alt="Timeline" className="img-fluid" style={{width: "80%"}} />
                 </div>
                 <div className="col-md-7">
-                    <div className="timeline">
-                        <h1 className='font-italic'>Timeline</h1>
+                    <div className="timeline">                        
                         <br/>
                         <p>Interested in knowing more about our DSC WOW. <br/>
                             See the flow of our events over here.
