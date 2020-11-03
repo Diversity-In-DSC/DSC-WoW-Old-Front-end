@@ -5,10 +5,10 @@ import '../css/faq.css'
 function Faq() {
     return (
         <div className="faq_sec my-5">
-            <div className="row">
-                <div className="col-md-7">
+            <div className="row justify-content-center">
+                <div className="col-md-5">
                     <div>
-                        <h1><i>FAQS</i></h1>
+                        <h1>FAQS</h1>
                         <br />
                         <p>Have a question? Let's see if there is something here that helps answer your queries!</p>
                     </div>

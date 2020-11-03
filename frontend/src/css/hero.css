@@ -5,7 +5,6 @@ body{
 html{
   overflow-x: hidden;
 }
-
 .hero{
   color: var(--heading-color);
   font-size: 25px;

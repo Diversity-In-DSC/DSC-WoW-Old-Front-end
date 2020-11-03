@@ -10,12 +10,12 @@ import Speaker from './components/Speaker'
 import Sponsor from './components/Sponsor'
 import Timeline from './components/Timeline'
 import Contact from './components/Contact'
-import Footer from './components/Footer'
+import Footer from './components/Footer';
+import './index.css';
 
 function App() {
   return (
     <>
-      {/* TODO: complete the component and uncomment */}
       <Navbar />
       <div id="home">
       <Hero />

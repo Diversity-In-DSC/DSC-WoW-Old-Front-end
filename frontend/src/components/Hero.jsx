@@ -6,8 +6,8 @@ class Hero extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="row container-fluid mt-5 mx-auto px-md-5">
-                    <div className="col-12 col-md-7 p-md-0">
+                <div className="row container-fluid mt-5 mx-auto px-md-5 justify-content-center">
+                    <div className="col-10 col-md-6 p-md-0">
                         <div className="hero">
                             <h1><i>W.O.W</i></h1>
                             <p className="hero-text mt-5">
