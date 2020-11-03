@@ -33,7 +33,7 @@ export class Navbar extends Component {
         return (
             <div style={{width:"95%",}}>
             <Row>
-                <Col md={{ span:4 }} >
+                <Col md={4} xs={8} >
                     <img src={dsclogo} alt = "DSC_Logo" style={{ width:"100%",marginLeft:"20px",marginTop:"20px"}}/>
                 </Col>
                 <Col md={{ span:1, offset: 7, }} style={{marginTop:"20px"}}>
