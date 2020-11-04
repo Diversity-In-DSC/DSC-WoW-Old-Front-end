@@ -7,6 +7,10 @@ import {
     faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import '../css/footer.css'
+import wow from "../assets/wow.png";
+import dscLogo from "../assets/dscLogo.png";
+import { Link } from "react-scroll";
+
 function Footer() {
     function toTop() {
         window.scrollTo({
@@ -16,38 +20,43 @@ function Footer() {
     }
 
     return (
-        <footer>
-            <div className="row container-fluid mx-auto py-3 bg-363636">
-                <div className="col-sm-6 col-md-3 mb-3">
-                    <div className="b-green"><h4 className="ml-2">ABOUT</h4></div>
-                    <p>Lorem ipsum dolor sit amet ident, repudiandae cupiditate tenetur labore consectetur at veniam. Reprehende</p>
+        <>
+            <footer className="footer__main">
+                <div className="footer__left">
+                    <img className="footer__dscLogo" src={dscLogo} alt=""></img>
+                    <img className="footer__wowLogo" src={wow} alt=""></img>
+                    <div className="footer__media">
+                        <FontAwesomeIcon icon={faFacebook} />
+                        <FontAwesomeIcon icon={faInstagram} />
+                        <FontAwesomeIcon icon={faLinkedin} />
+                        <FontAwesomeIcon icon={faTwitter} />
+                    </div>
                 </div>
-                <hr />
-                <div className="col-sm-6 col-md-3 mb-3">
-                    <div className="b-red"><h4 className="ml-2">CONTACT</h4></div>
-                    <p className="mb-0">support@example.com</p>
-                    <p>+91 9111111111</p>
+                <div className="footer__right">
+                    <div className="footer__rightRight">
+                        <Link to="home" spy={true} smooth={true}>
+                            <h2>Home</h2>
+                        </Link>
+                        <Link to="timeline" spy={true} smooth={true}>
+                            <h2>Timeline</h2>
+                        </Link>
+                    </div>
+                    <div className="footer__rightLeft">
+                        <Link to="speakers" spy={true} smooth={true}>
+                            <h2>Speakers</h2>
+                        </Link>
+                        <Link to="faq" spy={true} smooth={true}>
+                            <h2>FAQ</h2>
+                        </Link>
+                    </div>
+
                 </div>
-                <hr />
-                <div className="col-sm-6 col-md-3 mb-3">
-                    <div className="b-blue"><h4 className="ml-2">FOLLOW US</h4></div>
-                    <ul className="list-unstyled list-inline mt-3">
-                        <li className="list-inline-item mr-2 mb-2"><a className="icon f-facebook"><FontAwesomeIcon icon={faFacebook} /></a></li>
-                        <li className="list-inline-item mr-2 mb-2"><a className="icon f-instagram"><FontAwesomeIcon icon={faInstagram} /></a></li>
-                        <li className="list-inline-item mr-2 mb-2"><a className="icon f-twitter"><FontAwesomeIcon icon={faTwitter} /></a></li>
-                        <li className="list-inline-item mb-2"><a className="icon f-linkedin"><FontAwesomeIcon icon={faLinkedin} /></a></li>
-                    </ul>
-                </div>
-                <hr />
-                <div className="col-sm-6 col-md-3 mb-3">
-                    <div className="b-yellow"><h4 className="ml-2">NEWSLETTER</h4></div>
-                    <input type="text" className="form-control mt-2" placeholder="Name" required />
-                    <input type="email" className="form-control mt-1 mb-2" placeholder="Email" required />
-                    <button className="btn btn-block btn-primary">Submit</button>
-                </div>
+            </footer>
+            <div onClick={toTop} className="footer__topBtn">
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm5.247 15l-5.247-6.44-5.263 6.44-.737-.678 6-7.322 6 7.335-.753.665z" /></svg>
             </div>
-            <div className="container-fluid bg-202020 text-center py-4">© 2020 Copyright:<a href="#" className="ml-2">DSC WOW</a> <button type="button" id="scrollToTop" className="float-right" onClick={toTop}>☝️</button></div>
-        </footer>
+        </>
+
     )
 }
 

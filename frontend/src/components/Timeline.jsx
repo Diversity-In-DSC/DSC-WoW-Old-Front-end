@@ -1,7 +1,7 @@
 import React from 'react'
 import TimeImage from '../assets/timeline.png'
 import '../css/timeline.css';
-import Row from 'react-bootstrap/row';
+import { Row, Col } from 'react-bootstrap';
 
 function Timeline() {
     return (
