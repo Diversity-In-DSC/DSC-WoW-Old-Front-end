@@ -1,7 +1,7 @@
 import React from 'react'
 import TimeImage from '../assets/timeline.png'
 import '../css/timeline.css';
-import { Row, Col } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 
 function Timeline() {
     return (
@@ -38,7 +38,7 @@ function Timeline() {
                             <p className="card-text">
                                 Learn about Android App Development from the best of the speakers in the industry!
                             </p>
-                            <a href="#" class="btn btn-primary" style={{background: "#FE4F5A"}}>
+                            <a href="/" class="btn btn-primary" style={{background: "#FE4F5A"}}>
                                 Know More
                             </a>
                         </div>
@@ -54,7 +54,7 @@ function Timeline() {
                             <p className="card-text">
                                 Learn about Google Cloud Platform from the best of the speakers in the industry!
                             </p>
-                            <a href="#" class="btn btn-primary" style={{background: "#FFBD00"}}>
+                            <a href="/" class="btn btn-primary" style={{background: "#FFBD00"}}>
                                 Know More
                             </a>
                         </div>
@@ -70,7 +70,7 @@ function Timeline() {
                             <p className="card-text">
                                 Learn about AI and ML from the best of the speakers in the industry!                                        
                             </p>
-                            <a href="#" class="btn btn-primary" style={{background: "#546DDD"}}>
+                            <a href="/" class="btn btn-primary" style={{background: "#546DDD"}}>
                                 Know More
                             </a>
                         </div>
@@ -86,7 +86,7 @@ function Timeline() {
                             <p className="card-text">
                                 Learn about Web Development from the best of the speakers in the industry! 
                             </p>
-                            <a href="#" class="btn btn-primary" style={{background: "#00A452"}}>
+                            <a href="/" class="btn btn-primary" style={{background: "#00A452"}}>
                                 Know More
                             </a>
                         </div>
