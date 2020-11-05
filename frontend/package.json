@@ -17,7 +17,8 @@
     "react-dom": "^16.13.1",
     "react-menu-button": "^0.2.0",
     "react-scripts": "3.4.3",
-    "react-scroll": "^1.8.1"
+    "react-scroll": "^1.8.1",
+    "react-tabs": "^3.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
