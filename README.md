@@ -110,7 +110,7 @@ DB_PORT = 5432
 #### User
 
 - `/api/auth/reg/student`
-- _Allowed Methods:_ `POST`
+  - _Allowed Methods:_ `POST`
   - _Required Fields:_ `{email, college, password}`
   - _Other Fields:_ `{first_name, last_name, phone_no}`
   - Sends a confirmation email to the registered user
@@ -118,7 +118,6 @@ DB_PORT = 5432
 > Note: User needs to confirm their email before logging in
 
 -   `/api/auth/login`
-
     -   _Allowed Methods:_ `POST`
     -   _Required Fields:_ `{email, password}`
     -   Logs in the registered user
@@ -127,15 +126,14 @@ DB_PORT = 5432
     -   _Allowed Methods:_ `GET`
     -   _Authorization:_ `Token <token>`
     -   Fetchs information about currently logged in user
--   `/api/auth/changepassword`
 
+-   `/api/auth/changepassword`
     -   _Allowed Methods:_ `PUT`
     -   _Required Fields:_ `{old_password, new_password}`
     -   _Authorization:_ `Token <token>`
     -   Change the current user's password
 
 -   `/api/auth/resetpassword`
-
     -   _Allowed Methods:_ `POST`
     -   _Required Fields:_ `{email}`
     -   Sends an email with a link to reset the user's password (if registered with that email)
@@ -150,27 +148,23 @@ DB_PORT = 5432
 #### Team
 
 -   `/api/auth/reg/team`
-
     -   _Allowed Methods:_ `POST`
     -   _Required Fields:_ `{team_name, idea}`
     -   _Authorization:_ `Token <token>`
     -   Creates a new team and adds the current user a member of the team
 
 -   `/api/auth/add/student`
-
     -   _Allowed Methods:_ `POST`
     -   _Required Fields:_ `{team_token}`
     -   _Authorization:_ `Token <token>`
     -   Adds the current user a member of the team
 
 -   `/api/auth/student/team`
-
     -   _Allowed Methods:_ `GET`
     -   _Authorization:_ `Token <token>`
     -   Fetchs currently logged in user's team details
 
 -   `/api/team`
-
     -   _Allowed Methods:_ `GET`
     -   Fetches all the registered teams
 
@@ -181,7 +175,6 @@ DB_PORT = 5432
 #### Projects
 
 - `/api/auth/project`
-
   - _Allowed Methods:_ `GET, POST`
   - _Authorization:_ `Token <token>`
   - _Required Fields:_ `{project_name, git_url}`
