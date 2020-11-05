@@ -58,7 +58,7 @@ But ever since the pandemic, online events are the only things we are left with.
 - Move into the project folder `cd dsc-webathon/`
 - Create a `.env` file in the project folder
 
-```
+```env
 DEBUG = True
 SECRET_KEY = '<DJANGO_SECRET>'
 EMAIL_USE_SSL = False
