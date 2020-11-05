@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Col, Row } from 'react-bootstrap'
 import "../css/navbar.css";
 import dsclogo from "../assets/dsc_linear.png";
-import { Link, animateScroll } from "react-scroll";
+import { Link } from "react-scroll";
 import MenuButton from "./MenuButton";
 import DarkModeButton from './DarkModeButton';
 export class Navbar extends Component {

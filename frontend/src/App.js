@@ -1,6 +1,6 @@
 import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
-import  './css/index.css'
+import './css/index.css'
 
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
@@ -10,34 +10,47 @@ import Speaker from './components/Speaker'
 import Sponsor from './components/Sponsor'
 import Timeline from './components/Timeline'
 import Contact from './components/Contact'
-import Footer from './components/Footer';
+import Footer from './components/Footer'
+import Collaborators from './components/Collaborators';
 import './index.css';
 
 function App() {
   return (
     <>
       <Navbar />
+
       <div id="home">
-      <Hero />
+        <Hero />
       </div>
+
       <div id="aboutus">
-        <AboutUs /> 
+        <AboutUs />
       </div>
+
       <div id="speakers">
-      <Speaker />
+        <Speaker />
       </div>
+
       <div id="sponsors">
-      <Sponsor />
+        <Sponsor />
       </div>
+
       <div id="timeline">
-      <Timeline /> 
+        <Timeline />
       </div>
+
+      <div id="collaborators">
+        <Collaborators />
+      </div>
+
       <div id="faq">
-      <Faq />
+        <Faq />
       </div>
+
       <div id="contact">
-        <Contact /> 
+        <Contact />
       </div>
+
       <Footer />
     </>
   );

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import aboutus from '../assets/AboutUs.png';
-import Row from 'react-bootstrap/row';
-import Col from 'react-bootstrap/col';
+import { Row } from 'react-bootstrap';
 
 class AboutUs extends Component {
     render() {

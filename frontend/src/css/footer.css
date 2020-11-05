@@ -1,54 +1,134 @@
-body {
-  font-family: 'Roboto Condensed', sans-serif;
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+  padding-right: 100px;
+  padding-left: 100px;
 }
 
-.bg-363636 {background-color: #363636;}
-.bg-202020{background-color: #202020;}
-
-footer{
-    color: #fff;
+h2 {
+  padding: 20px;
+  color: grey;
+  font-size: 30px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
 }
 
-.icon {
-    color: #fff !important;
-    padding: 5px 9px;
-    font-size: 27px;
-    border-radius: 9px 1px;
-    cursor: pointer;
-}
-.icon:hover{
-    opacity: 0.7;
-}
-.f-facebook {
-    background: #3B5998;
+h2:hover {
+  color: blue;
+  cursor: pointer;
 }
 
-.f-twitter {
-    background: #55ACEE;
+.footer__dscLogo {
+  width: 60%;
+  margin-bottom: 15px;
+  min-width: 250px;
+  transition: all 0.2s ease-in-out;
 }
 
-.f-instagram {
-    background: #125688;
+.footer__dscLogo:hover {
+  opacity: 0.7;
 }
 
-.f-linkedin {
-    background: #007bb5;
+.footer__wowLogo {
+  max-height: 80px;
+  min-height: 60px;
+  width: 52%;
+  transition: all 0.2s ease-in-out;
+  min-width: 200px;
 }
 
-a{text-decoration: none;}
-.b-blue{border-left:3px solid #4285f4 ;}
-.b-yellow{border-left:3px solid #fbbc04 ;}
-.b-green{border-left:3px solid  #0f9d58 ;}
-.b-red{border-left: 3px solid #ea4335;}
+.footer__wowLogo:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
 
-#scrollToTop {
-    background-color: #202020;
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    cursor: pointer;
-    font-size: 25px;
-    width: 48px;
-    outline: none;
-    margin-top: -7px;
+.footer__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  flex: 0.5;
+}
+
+.footer__right {
+  margin-right: 90px;
+  display: flex;
+  justify-content: space-between;
+  background-size: contain;
+}
+
+.footer__rightRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__rightLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__media {
+  margin-top: 10px;
+}
+
+.footer__media > svg {
+  margin-right: 20px;
+  transition: all 0.2s ease-in-out;
+  font-size: 25px;
+}
+
+.fa-facebook:hover {
+  color: blue;
+}
+
+.fa-twitter:hover {
+  color: blue;
+}
+
+.fa-linkedin:hover {
+  color: blue;
+}
+
+.fa-instagram:hover {
+  color: #f77737;
+}
+
+.footer__media > svg:hover {
+  cursor: pointer;
+}
+
+.footer__topBtn {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 15px;
+}
+
+.footer__topBtn > svg {
+    transition: all 0.2s ease-in-out;
+}
+
+.footer__topBtn > svg:hover {
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 765px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
   }
+
+  .footer__right {
+    margin: auto;
+    display: block;
+  }
+
+  h2 {
+    padding: auto;
+    font-size: auto;
+  }
+}
