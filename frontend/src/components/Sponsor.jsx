@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'
-import sponsors from '../assets/sponsor.png';
 import img1 from '../assets/dscbvppune.png';
 import devfolio from '../assets/devfolio.png'
 import gdgp from '../assets/gdg pune.png';

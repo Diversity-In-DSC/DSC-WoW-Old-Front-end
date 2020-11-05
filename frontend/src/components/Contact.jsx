@@ -8,16 +8,16 @@ class Contact extends Component {
     render() {
         return (
             <React.Fragment>
-                <Row md={7} className="p-md-0 mx-5">
+                <Row className="p-md-0 mx-5 justify-content-center">
                     <h1>Contact Us</h1>
                 </Row>
 
-                <div className="row container-fluid my-5 mx-auto px-md-5">
+                <div className="row container-fluid mb-5 mt-3 px-md-5 mx-auto justify-content-center">
                     <Col md={5} className="mb-3">
-                            <img src={contact} alt="Contact Us" className="img-fluid w-75" />
+                        <img src={contact} alt="Contact Us" className="img-fluid w-75" />
                     </Col>
 
-                    <div className="col-12 col-md-7 p-md-0">
+                    <div className="col-10 col-md-5 p-md-0">
                         <div className="timeline">                            
                             <p className="my-5">
                                 Have a query that isn’t answered in the FAQ docs?

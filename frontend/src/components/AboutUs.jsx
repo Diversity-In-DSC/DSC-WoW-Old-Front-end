@@ -1,21 +1,20 @@
 import React, { Component } from 'react'
 import aboutus from '../assets/AboutUs.png';
-import Row from 'react-bootstrap/row';
-import Col from 'react-bootstrap/col';
+import { Row } from 'react-bootstrap';
 
 class AboutUs extends Component {
     render() {
         return (
             <React.Fragment>
                 <div className="container-fluid my-5 mx-auto px-md-5">
-                    <Row md={7} className="p-md-0 mx-5">
+                    <Row className="p-md-0 mx-5 my-3 justify-content-center">
                         <h1>About Us</h1>
                     </Row>
-                    <Row>
-                        <div className="col-12 col-md-5 my-3">
+                    <Row className="justify-content-center">
+                        <div className="col-10 col-md-5 my-3">
                             <img src={aboutus} alt="About Us" className="img-fluid" style={{width: "80%"}} />
                         </div>
-                        <div className="col-12 col-md-7 p-md-0">
+                        <div className="col-10 col-md-5 p-md-0">
                             <div className="timeline">
                                 <p className="mt-3">
                                     Developer Student Clubs are university based
