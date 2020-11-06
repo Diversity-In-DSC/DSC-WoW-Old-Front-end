@@ -1,38 +1,55 @@
-import React from 'react'
 import FaqImage from '../assets/faqImage.png'
+import React, { Component } from 'react';
+import Faq from 'react-faq-component';
 import '../css/faq.css'
 
-function Faq() {
-    return (
-        <div className="faq_sec my-5">
-            <div className="row justify-content-center">
-                <div className="col-md-5">
-                    <div>
-                        <h1>FAQS</h1>
-                        <br />
-                        <p>Have a question? Let's see if there is something here that helps answer your queries!</p>
-                    </div>
-                    <div>
-                        <div>
-                            <h5 className="mt-5 mb-2">Q. What does DSC WOW stands for?</h5>
-                            <p>Ans. WOW stands for Worlds of Wonder. It's brainchild event of 80 DSC leads who came
-                            together to bring something  interesting for your doorstep.
-                            </p>
-                        </div>
-                        <div>
-                            <h5 className="mt-5 mb-2">Q. What are the perks of attending DSC WOW?</h5>
-                            <p>Ans. Apart from the variety of sessions by the best speakers in their domains,
-                                we also have goodies and swags for you peeps
-                                so stay tuned for that!</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-md-5">
-                    <img style={{ width: "90%" }} src={FaqImage} alt="faqImage" />
-                </div>
-            </div>
-        </div>
-    )
+
+const data = {
+  title: "FAQ's",
+  rows: [
+    {
+      title: "What does DSC WOW stands for?",
+      content: "- WOW stands for Worlds of Wonder. It's the brainchild event of 115 DSC leads who came together to bring something interesting to your doorstep. "
+    },
+    {
+      title: "What are the perks of attending DSC WOW?",
+      content: " - Apart from the variety of sessions by the best speakers in their domains, we also have goodies and swags for you peeps. So stay tuned! "
+    },
+    {
+      title: "Who can attend DSC WOW?",
+      content: "- Students, Developers, Communities & Institutions."
+    },
+    {
+      title: "Is DSC WOW 2020 Free to attend?",
+      content: "- It's FREE! Just put on your learning caps and hop on."
+    },
+
+    {
+      title: "Will Participation Certificates be provided?",
+      content: "- Yes, participation certificates will be provided to all."
+    }]
 }
 
-export default Faq
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+      <div className="faq_sec">
+      <Faq data={data} styles={{
+                   bgColor: "white",
+                   titleTextColor: "black",
+                   rowTitleColor: "black",
+                   rowTitleTextSize: '20px',
+                   rowContentColor: "#5b5e5b",
+                   rowContentTextSize: '19px',
+                    rowContentPaddingTop: '10px',
+                    rowContentPaddingBottom: '10px',
+                    rowContentPaddingLeft: '50px',
+                    rowContentPaddingRight: '150px',
+                   arrowColor: "blue",
+                   }} />
+      </div>
+      </div>
+    )
+  }
+}
