@@ -94,7 +94,7 @@ const Speaker=()=> {
                 <div className = "">
                     <div className = "text-center py-5 ma-1 fill-height whiteThemeCard" style = {{cursor: 'pointer'}}>
                     <div className = "v-avatar" style = {{height: '100px',minWidth: '100px' ,width: '100px'}}>
-                        <img src = {i.img} alt/>
+                        <img src = {i.img} alt=""/>
                     </div>
                         <p className = "mt-3 mb-0 google-font mb-0" style = {{fontSize: '110%'}}>
                             {i.name}
@@ -105,10 +105,10 @@ const Speaker=()=> {
                     <div className = "container py-0 my-0 container--fluid">
                         <div className = "row py-0 my-0 align-start justify-start">
                             <div className = "py-1 my-0 col-sm-12 col-md-12 col-lg-12 col-12">
-                                <a href= {i.twitter} target= "_blank" className = "ml-0 mt-0 mx-1" aria-label = "social media btn">
+                                <a href= {i.twitter} target= "_blank" rel="noopener noreferrer" className = "ml-0 mt-0 mx-1" aria-label = "social media btn">
                                     <span><TwitterIcon/></span>
                                 </a>
-                                <a href= {i.linkedin} target= "_blank" className = "ml-0 mt-0 mx-1 v-btn v-btn--flat v-btn--icon v-btn--round theme--light v-size--small" aria-label = "social media btn">
+                                <a href= {i.linkedin} target= "_blank" rel="noopener noreferrer" className = "ml-0 mt-0 mx-1 v-btn v-btn--flat v-btn--icon v-btn--round theme--light v-size--small" aria-label = "social media btn">
                                     <LinkedInIcon/>
                                 </a>
 

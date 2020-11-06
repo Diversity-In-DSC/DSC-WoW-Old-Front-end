@@ -29,7 +29,7 @@ function Contact() {
             }
         };
 
-        const contactResp = await fetch('https://site-email-send.el.r.appspot.com/api/contactus', requestOptions);
+        const contactResp = await fetch('https://api.dscwow.tech/api/contactus', requestOptions);
 
         console.log(contactResp);
     }

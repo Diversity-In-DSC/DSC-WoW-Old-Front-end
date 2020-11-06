@@ -1,4 +1,3 @@
-import FaqImage from '../assets/faqImage.png'
 import React, { Component } from 'react';
 import Faq from 'react-faq-component';
 import '../css/faq.css'
