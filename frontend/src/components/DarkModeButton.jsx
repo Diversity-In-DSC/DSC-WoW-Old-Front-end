@@ -7,6 +7,7 @@ const DarkModeButton = () => {
         const currentBackground = window.localStorage.getItem('darkMode');
         const { style } = document.body;
         const isDark = currentBackground === 'true';
+        document.body.classList.toggle('dark');
         style.setProperty('--background-color', isDark ? '#fffffe' : '#16161a');
         style.setProperty('--text-color', isDark ? '#000000' : '#fefefe');
         style.setProperty('--heading-color', isDark ? '#000000' : '#fefefe');

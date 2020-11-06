@@ -14,6 +14,7 @@ import jb from '../assets/jetbrains.png';
 import echo from '../assets/echo.png';
 import digital from '../assets/digital.png';
 import gmc from '../assets/give.png';
+import '../css/sponsor.css'
 
 class Sponsor extends Component {
     render() {
@@ -38,7 +39,7 @@ class Sponsor extends Component {
                                         <h4 className="mb-3">Community Sponsors</h4>
                                     </Row>
                                     <Row className="justify-content-md-center">
-                                        <img src={img1} alt="DSC BVDUCOE Pune" className="img-fluid" />
+                                        <img src={img1} alt="DSC BVDUCOE Pune" className="img-fluid image__DSC" />
                                     </Row>
                                 </div>
                             </Container>
@@ -59,21 +60,21 @@ class Sponsor extends Component {
                             <Col xs lg="2" className="mr-lg-5">
                                 {/* Devfolio */}
                                 <a href="https://devfolio.co/" target="_blank" rel="noopener noreferrer">
-                                    <img src={devfolio} alt="Devfolio" className="img-fluid" />
+                                    <img src={devfolio} alt="Devfolio" className="img-fluid image__devfolio" />
                                 </a>
                             </Col>
 
                             <Col xs lg="2" className="mr-lg-5">
                                 {/* Matic */}
                                 <a href="https://matic.network/" target="_blank" rel="noopener noreferrer">
-                                    <img src={matic} alt="Matic" className="img-fluid" />
+                                    <img src={matic} alt="Matic" className="img-fluid image__matic" />
                                 </a>
                             </Col>
                                     
                             <Col xs lg="2" className="mr-lg-5">
                                 {/* GDG Pune */}
                                 <a href="https://gdg.community.dev/gdg-pune/" target="_blank" rel="noopener noreferrer">
-                                    <img src={gdgp} alt="GDG Pune" className="img-fluid" />
+                                    <img src={gdgp} alt="GDG Pune" className="img-fluid image__GDGPune" />
                                 </a>
                             </Col>        
                         </Row>
@@ -83,14 +84,14 @@ class Sponsor extends Component {
                             <Col xs lg="2" className="mr-lg-5">
                                 {/* Fold */}
                                 <a href="https://fold.money/" target="_blank" rel="noopener noreferrer">
-                                    <img src={fold} alt="fold" className="img-fluid" />
+                                    <img src={fold} alt="fold" className="img-fluid image__fold" />
                                 </a>
                             </Col>
 
                             <Col xs lg="2" className="mr-lg-5">
                                 {/* portis */}
                                 <a href="https://www.portis.io/" target="_blank" rel="noopener noreferrer">
-                                    <img src={portis} alt="Portis" className="img-fluid" />
+                                    <img src={portis} alt="Portis" className="img-fluid image__portis" />
                                 </a>
                             </Col>
 
