@@ -1,27 +1,48 @@
-body {
-  font-family: 'Roboto Condensed', sans-serif;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-.timeline{
-    font-size: 25px;
+
+.timeline {
+	max-width: 90% ;
+	margin: 0 auto;
 }
-.timeline p{
-    font-weight: 400;
-    font-size: 20px;
+
+.tab-list-item {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	margin: 0 2px 0 2px;
 }
-.tl-cards .card{
-    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
-    border-radius: 42px 42px 0px 0px;
-    height: 270px;
-    width: 300px;
+
+.tab-panel {
+	margin: 20px 0 0 5px;
 }
-.tl-cards .card-header{
-    border-radius: 42px 42px 0px 0px;
+
+.time {
+	font-size: 18px;
 }
-.tl-cards .btn{
-    border-radius: 24px;
+
+
+span {
+	font-size: 22px;
 }
-@media screen and (max-width: 350px) {
-    .tl-cards .card{
-        height: 320px;
-    } 
+
+.chip {
+	border: 0.1px solid lightgrey;
+	background-color: var(--background-color);
+  font-size: 14px;
+	border-radius: 15px;
+	margin: 0 2px 0 2px;
+	padding: 0 10px 0 10px;
+}
+
+.buttonImg {
+	height: 24px;
+	margin: 0 10px 0 0;
+}
+
+.buttonText {
+	font-size: 14px;
+	margin: 0 4px 0 0;
 }
