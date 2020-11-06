@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.timeline {
+	max-width: 90% ;
+	margin: 0 auto;
+}
+
+.tab-list-item {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	margin: 0 2px 0 2px;
+}
+
+.tab-panel {
+	margin: 20px 0 0 5px;
+}
+
+.time {
+	font-size: 18px;
+}
+
+
+span {
+	font-size: 22px;
+}
+
+.chip {
+	border: 0.1px solid lightgrey;
+	background-color: var(--background-color);
+  font-size: 14px;
+	border-radius: 15px;
+	margin: 0 2px 0 2px;
+	padding: 0 10px 0 10px;
+}
+
+.buttonImg {
+	height: 24px;
+	margin: 0 10px 0 0;
+}
+
+.buttonText {
+	font-size: 14px;
+	margin: 0 4px 0 0;
+}

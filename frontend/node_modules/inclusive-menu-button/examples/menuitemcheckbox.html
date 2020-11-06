@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../inclusive-menu-button.css" />
+    <style>
+    /* basic page styles */
+    html {
+      font-size: 150%;
+      font-family: sans-serif;
+      padding: 1em;
+    }
+
+    * {
+      font-size: inherit;
+      font-family: inherit;
+    }
+
+    /* custom theming */
+    button {
+      padding: 0.25rem 1rem;
+      background: black;
+      color: white;
+    }
+
+    button:focus {
+      outline: none;
+      background-color: #3737c8;
+    }
+
+    [data-inclusive-menu] [role^="menuitem"] {
+      margin-top: 3px;
+    }
+    </style>
+    <title>
+      Inclusive Menu Button | menuitemcheckbox example
+    </title>
+  </head>
+  <body>
+    <div data-inclusive-menu>
+     <button data-inclusive-menu-opens="typography">
+       Typography
+       <span aria-hidden="true">&#x25be;</span>
+     </button>
+     <div id="typography" data-inclusive-menu-from="left">
+       <button>Ligatures</button>
+       <button>Drop caps</button>
+       <button>Hyphenation</button>
+     </div>
+    </div>
+    <script src="../inclusive-menu-button.js"></script>
+    <script>
+      // Instantiation
+      var exampleButton = document.querySelector('[data-inclusive-menu-opens]')
+      var exampleMenuButton = new MenuButton(exampleButton, { checkable: 'many' })
+
+      // Listen to choose event
+      exampleMenuButton.on('choose', function (choice) {
+        console.log('You chose "' + choice.textContent + '"')
+      })
+    </script>
+  </body>
+</html>
