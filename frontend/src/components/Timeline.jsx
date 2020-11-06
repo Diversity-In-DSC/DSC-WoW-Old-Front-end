@@ -236,7 +236,7 @@ const Timeline = () => {
 
 		<TabPanel>
 			<div className="tab-panel">
-				<h2 style={{color: "#FE4F5A", fontWeight: "bold",}}>Day 1: AI & ML, December 7th 2020</h2>
+				<h2 style={{color: "#FE4F5A", fontWeight: "bold",}}>Day 1: AI/ML, December 7th 2020</h2>
 				<hr />
 				
 				<TimelineRow 
