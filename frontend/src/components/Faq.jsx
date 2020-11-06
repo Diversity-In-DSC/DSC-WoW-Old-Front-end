@@ -22,8 +22,19 @@ function Faq() {
                         <div>
                             <h5 className="mt-5 mb-2">Q. What are the perks of attending DSC WOW?</h5>
                             <p>Ans. Apart from the variety of sessions by the best speakers in their domains,
-                                we also have goodies and swags for you peeps
-                                so stay tuned for that!</p>
+                                we also have goodies and swags for you peeps so stay tuned for that!</p>
+                        </div>
+                        <div>
+                            <h5 className="mt-5 mb-2">Q.Who can attend DSC WOW?</h5>
+                            <p>Ans. Students, Developers, Communities & Institutions.</p>
+                        </div>
+                        <div>
+                            <h5 className="mt-5 mb-2">Q.Is DSC WOW 2020 Free to attend?</h5>
+                            <p>Ans.It's FREE! Just put on your learning caps and hop on.</p>
+                        </div>
+                        <div>
+                            <h5 className="mt-5 mb-2">Q.Will Participation Certificates be provided?</h5>
+                            <p>Ans. Yes, participation certificates will be provided to all.</p>
                         </div>
                     </div>
                 </div>
