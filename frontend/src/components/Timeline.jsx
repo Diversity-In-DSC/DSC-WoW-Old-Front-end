@@ -12,19 +12,17 @@ const Timeline = () => {
     // Day 1 Data 
 
 	const dayOneTimings = [
-		"4:00 PM",
-		"5:00 PM",
-		"6:00 PM",
-		"7:00 PM",
-		"8:00 PM",
+		"5:00 PM - 5:30 PM",
+		"5:30 PM - 6:30 PM",
+		"6:30 PM - 7:00 PM",
+		"7:00 PM - 8:00 PM",
 	];
 
 	const dayOneTitles = [
-		"The future we're building",
-		"The future we're building",
-		"The future we're building",
-		"The future we're building",
-		"The future we're building",
+		"Keynote Speaker Session",
+		"Technical - AI/ML",
+		"Icebreakers",
+		"Technical - AMA for AI/ML",
 	];
 
 	const dayOneChipOneIcons = [
@@ -32,15 +30,13 @@ const Timeline = () => {
 		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
 		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
 		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
-		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
 	]
 
 	const dayOneChipOneTexts = [
-		"Tesla",
-		"Tesla",
-		"Tesla",
-		"Tesla",
-		"Tesla",
+		"Keynote ",
+		"Technical",
+		"Icebreaker",
+		"Ask Me Anything",
 	]
 	
 	const dayOneChipTwoIcons = [
@@ -48,33 +44,29 @@ const Timeline = () => {
 		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
 		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
 		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
-		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
 	]
 
 	const dayOneChipTwoTexts = [
-		"Elon Musk",
-		"Elon Musk",
-		"Elon Musk",
-		"Elon Musk",
-		"Elon Musk",
+		"Speaker 1",
+		"Speaker 2",
+		"Speaker 3",
+		"Speaker 4",
 	]
 
 	// Day 2 Data 
 
 	const dayTwoTimings = [
-		"4:00 PM",
-		"5:00 PM",
-		"6:00 PM",
-		"7:00 PM",
-		"8:00 PM",
+		"5:00 PM - 5:30 PM",
+		"5:30 PM - 6:30 PM",
+		"6:30 PM - 7:00 PM",
+		"7:00 PM - 8:00 PM",
 	];
 
 	const dayTwoTitles = [
-		"The future we're building",
-		"The future we're building",
-		"The future we're building",
-		"The future we're building",
-		"The future we're building",
+		"Keynote Speaker Session",
+		"Technical - Blockchain",
+		"Icebreakers",
+		"Technical - AMA for Blockchain",
 	];
 
 	const dayTwoChipOneIcons = [
@@ -82,15 +74,13 @@ const Timeline = () => {
 		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
 		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
 		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
-		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
 	]
 
 	const dayTwoChipOneTexts = [
-		"Tesla",
-		"Tesla",
-		"Tesla",
-		"Tesla",
-		"Tesla",
+		"Keynote ",
+		"Technical",
+		"Icebreaker",
+		"Ask Me Anything",
 	]
 	
 	const dayTwoChipTwoIcons = [
@@ -98,33 +88,29 @@ const Timeline = () => {
 		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
 		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
 		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
-		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
 	]
 
 	const dayTwoChipTwoTexts = [
-		"Elon Musk",
-		"Elon Musk",
-		"Elon Musk",
-		"Elon Musk",
-		"Elon Musk",
+		"Speaker 1",
+		"Speaker 2",
+		"Speaker 3",
+		"Speaker 4",
 	]
 
 // Day 3 Data 
 
 	const dayThreeTimings = [
-		"4:00 PM",
-		"5:00 PM",
-		"6:00 PM",
-		"7:00 PM",
-		"8:00 PM",
+		"5:00 PM - 5:30 PM",
+		"5:30 PM - 6:30 PM",
+		"6:30 PM - 7:00 PM",
+		"7:00 PM - 8:00 PM",
 	];
 
 	const dayThreeTitles = [
-		"The future we're building",
-		"The future we're building",
-		"The future we're building",
-		"The future we're building",
-		"The future we're building",
+		"Keynote Speaker Session",
+		"Technical - AR/VR",
+		"Icebreakers",
+		"Technical - AMA for AR/VR",
 	];
 
 	const dayThreeChipOneIcons = [
@@ -132,15 +118,13 @@ const Timeline = () => {
 		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
 		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
 		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
-		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
 	]
 
 	const dayThreeChipOneTexts = [
-		"Tesla",
-		"Tesla",
-		"Tesla",
-		"Tesla",
-		"Tesla",
+		"Keynote ",
+		"Technical",
+		"Icebreaker",
+		"Ask Me Anything",
 	]
 	
 	const dayThreeChipTwoIcons = [
@@ -148,33 +132,29 @@ const Timeline = () => {
 		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
 		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
 		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
-		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
 	]
 
 	const dayThreeChipTwoTexts = [
-		"Elon Musk",
-		"Elon Musk",
-		"Elon Musk",
-		"Elon Musk",
-		"Elon Musk",
+		"Speaker 1",
+		"Speaker 2",
+		"Speaker 3",
+		"Speaker 4",
 	]
 
 	// Day 4 Data 
 
 	const dayFourTimings = [
-		"4:00 PM",
-		"5:00 PM",
-		"6:00 PM",
-		"7:00 PM",
-		"8:00 PM",
+		"5:00 PM - 5:30 PM",
+		"5:30 PM - 6:30 PM",
+		"6:30 PM - 7:00 PM",
+		"7:00 PM - 8:00 PM",
 	];
 
 	const dayFourTitles = [
-		"The future we're building",
-		"The future we're building",
-		"The future we're building",
-		"The future we're building",
-		"The future we're building",
+		"Keynote Speaker Session",
+		"Technical - Web/Android",
+		"Icebreakers",
+		"Technical - AMA for AI/ML",
 	];
 
 	const dayFourChipOneIcons = [
@@ -182,15 +162,13 @@ const Timeline = () => {
 		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
 		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
 		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
-		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
 	]
 
 	const dayFourChipOneTexts = [
-		"Tesla",
-		"Tesla",
-		"Tesla",
-		"Tesla",
-		"Tesla",
+		"Keynote ",
+		"Technical",
+		"Icebreaker",
+		"Ask Me Anything",
 	]
 	
 	const dayFourChipTwoIcons = [
@@ -198,15 +176,13 @@ const Timeline = () => {
 		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
 		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
 		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
-		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
 	]
 
 	const dayFourChipTwoTexts = [
-		"Elon Musk",
-		"Elon Musk",
-		"Elon Musk",
-		"Elon Musk",
-		"Elon Musk",
+		"Speaker 1",
+		"Speaker 2",
+		"Speaker 3",
+		"Speaker 4",
 	]
 
 	// Data end
@@ -239,19 +215,19 @@ const Timeline = () => {
 		<TabList style={{color: "white"}}>
             <Tab style={{background: "#FE4F5A", borderTopRightRadius: "10px", borderTopLeftRadius: "10px", margin: "0 2px 0 2px",
              fontSize: "20px",}}>
-			1. Android Day
+			1. AI/ML
 			</Tab>
             <Tab style={{background: "#FFBD00", borderTopRightRadius: "10px", borderTopLeftRadius: "10px", margin: "0 2px 0 2px",
              fontSize: "20px",}}>
-			2. Cloud Day
+			2. Blockchain
 			</Tab>
             <Tab style={{background: "#546DDD", borderTopRightRadius: "10px", borderTopLeftRadius: "10px", margin: "0 2px 0 2px",
              fontSize: "20px",}}>
-			3. AI & ML Day
+			3. AR/VR
 			</Tab>
             <Tab style={{background: "#00A452", borderTopRightRadius: "10px", borderTopLeftRadius: "10px", margin: "0 2px 0 2px",
              fontSize: "20px",}}>
-			4. Web Day
+			4. Web/Android
 			</Tab>
 		</TabList>
 
@@ -260,7 +236,7 @@ const Timeline = () => {
 
 		<TabPanel>
 			<div className="tab-panel">
-				<h2 style={{color: "#FE4F5A", fontWeight: "bold",}}>Day 1: Android Day, December 7th 2020</h2>
+				<h2 style={{color: "#FE4F5A", fontWeight: "bold",}}>Day 1: AI/ML, December 7th 2020</h2>
 				<hr />
 				
 				<TimelineRow 
@@ -299,14 +275,7 @@ const Timeline = () => {
 					chipTwoText={dayOneChipTwoTexts[3]}
 				/>
 
-				<TimelineRow 
-					time={dayOneTimings[4]}
-					title={dayOneTitles[4]}
-					chipOneIcon={dayOneChipOneIcons[4]}
-					chipOneText={dayOneChipOneTexts[4]}
-					chipTwoIcon={dayOneChipTwoIcons[4]}
-					chipTwoText={dayOneChipTwoTexts[4]}
-				/>
+				
 				
 			</div>
 		</TabPanel>
@@ -315,7 +284,7 @@ const Timeline = () => {
 
 		<TabPanel>
 			<div className="tab-panel">
-				<h2 style={{color: "#FFBD00", fontWeight: "bold",}}>Day 2: Cloud Day, December 8th 2020</h2>
+				<h2 style={{color: "#FFBD00", fontWeight: "bold",}}>Day 2: Blockchain, December 8th 2020</h2>
 				<hr />
 				
 				<TimelineRow 
@@ -354,14 +323,6 @@ const Timeline = () => {
 					chipTwoText={dayTwoChipTwoTexts[3]}
 				/>
 
-				<TimelineRow 
-					time={dayTwoTimings[4]}
-					title={dayTwoTitles[4]}
-					chipOneIcon={dayTwoChipOneIcons[4]}
-					chipOneText={dayTwoChipOneTexts[4]}
-					chipTwoIcon={dayTwoChipTwoIcons[4]}
-					chipTwoText={dayTwoChipTwoTexts[4]}
-				/>
 				
 			</div>
 		</TabPanel>
@@ -372,7 +333,7 @@ const Timeline = () => {
 		
 			<TabPanel>
 			<div className="tab-panel">
-				<h2 style={{color: "#546DDD", fontWeight: "bold",}}>Day 3: AI & ML Day, December 9th 2020</h2>
+				<h2 style={{color: "#546DDD", fontWeight: "bold",}}>Day 3: AR/VR, December 9th 2020</h2>
 				<hr />
 				
 				<TimelineRow 
@@ -411,14 +372,6 @@ const Timeline = () => {
 					chipTwoText={dayThreeChipTwoTexts[3]}
 				/>
 
-				<TimelineRow 
-					time={dayThreeTimings[4]}
-					title={dayThreeTitles[4]}
-					chipOneIcon={dayThreeChipOneIcons[4]}
-					chipOneText={dayThreeChipOneTexts[4]}
-					chipTwoIcon={dayThreeChipTwoIcons[4]}
-					chipTwoText={dayThreeChipTwoTexts[4]}
-				/>
 				
 			</div>
 		</TabPanel>
@@ -430,7 +383,7 @@ const Timeline = () => {
 
 			<TabPanel>
 			<div className="tab-panel">
-				<h2 style={{color: "#00A452", fontWeight: "bold",}}>Day 4: Web Day, December 10th 2020</h2>
+				<h2 style={{color: "#00A452", fontWeight: "bold",}}>Day 4: Web/Android, December 10th 2020</h2>
 				<hr />
 				
 				<TimelineRow 
@@ -469,14 +422,6 @@ const Timeline = () => {
 					chipTwoText={dayFourChipTwoTexts[3]}
 				/>
 
-				<TimelineRow 
-					time={dayFourTimings[4]}
-					title={dayFourTitles[4]}
-					chipOneIcon={dayFourChipOneIcons[4]}
-					chipOneText={dayFourChipOneTexts[4]}
-					chipTwoIcon={dayFourChipTwoIcons[4]}
-					chipTwoText={dayFourChipTwoTexts[4]}
-				/>
 				
 			</div>
 		</TabPanel>
