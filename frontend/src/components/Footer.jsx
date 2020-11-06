@@ -40,8 +40,8 @@ function Footer() {
                         <Link to="timeline" spy={true} smooth={true}>
                             <h2>Timeline</h2>
                         </Link>
-                    </div>
-                    <div className="footer__rightLeft">
+                    {/* </div>
+                    <div className="footer__rightLeft"> */}
                         <Link to="speakers" spy={true} smooth={true}>
                             <h2>Speakers</h2>
                         </Link>
