@@ -3,7 +3,7 @@
 ## Frontend
 
 Frontend is built in React.js and deployed on GCP App engine.
-URL : <https://dsc-wow.el.r.appspot.com/>
+URL : <https://dscwow.tech/>
 
 ### Deploying on GCP App engine
 
