@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import 'react-tabs/style/react-tabs.css';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import {  Row } from 'react-bootstrap';
@@ -188,8 +188,11 @@ const Timeline = () => {
 	// Data end
 
 
+	const [currentTab,setCurrentTab] = useState(1);
+
+
 	return (
-		<div className="timeline">
+		<div className="timeline-container">
 
 		<Row md={7} className="justify-content-center p-md-0">
 		<h1>Timeline</h1>
@@ -210,25 +213,40 @@ const Timeline = () => {
 			</div>
 	</div>
 
-
+		<div className="schedule-container text-center ">
 		<Tabs>
 		<TabList style={{color: "white"}}>
-            <Tab style={{background: "#FE4F5A", borderTopRightRadius: "10px", borderTopLeftRadius: "10px", margin: "0 2px 0 2px",
-             fontSize: "20px",}}>
-			1. AI/ML
-			</Tab>
-            <Tab style={{background: "#FFBD00", borderTopRightRadius: "10px", borderTopLeftRadius: "10px", margin: "0 2px 0 2px",
-             fontSize: "20px",}}>
-			2. Blockchain
-			</Tab>
-            <Tab style={{background: "#546DDD", borderTopRightRadius: "10px", borderTopLeftRadius: "10px", margin: "0 2px 0 2px",
-             fontSize: "20px",}}>
-			3. AR/VR
-			</Tab>
-            <Tab style={{background: "#00A452", borderTopRightRadius: "10px", borderTopLeftRadius: "10px", margin: "0 2px 0 2px",
-             fontSize: "20px",}}>
-			4. Web/Android
-			</Tab>
+					<Tab 
+						onClick={() => setCurrentTab(1)}
+						style={{background: "#FE4F5A", borderTopRightRadius: "10px", borderTopLeftRadius: "10px", margin: "0 2px 0 2px",
+						 fontSize: "20px",}}
+						>
+					1. AI/ML
+					</Tab>
+								
+					<Tab 
+						onClick={() => setCurrentTab(2)}
+						style={{background: "#FFBD00", borderTopRightRadius: "10px", borderTopLeftRadius: "10px", margin: "0 2px 0 2px",
+								fontSize: "20px",}}
+						>
+					2. Blockchain
+					</Tab>
+								
+					<Tab 
+						onClick={() => setCurrentTab(3)}
+						style={{background: "#546DDD", borderTopRightRadius: "10px", borderTopLeftRadius: "10px", margin: "0 2px 0 2px",
+								fontSize: "20px",}}
+					>
+					3. AR/VR
+					</Tab>
+							
+					<Tab 
+						onClick={() => setCurrentTab(4)}
+						style={{background: "#00A452", borderTopRightRadius: "10px", borderTopLeftRadius: "10px", margin: "0 2px 0 2px",
+								fontSize: "20px",}}
+					>
+					4. Web/Android
+					</Tab>
 		</TabList>
 
 		
@@ -236,44 +254,47 @@ const Timeline = () => {
 
 		<TabPanel>
 			<div className="tab-panel">
-				<h2 style={{color: "#FE4F5A", fontWeight: "bold",}}>Day 1: AI/ML, December 7th 2020</h2>
-				<hr />
+				<div className="event-day-title">
+					<h2 style={{backgroundColor: "#FE4F5A",color: "white", fontWeight: "bold",}}>Day 100: AI/ML, December 7th 2020</h2>
+				</div>
 				
-				<TimelineRow 
-					time={dayOneTimings[0]}
-					title={dayOneTitles[0]}
-					chipOneIcon={dayOneChipOneIcons[0]}
-					chipOneText={dayOneChipOneTexts[0]}
-					chipTwoIcon={dayOneChipTwoIcons[0]}
-					chipTwoText={dayOneChipTwoTexts[0]}
-				/>
+				<div className="event-rows" style={{borderColor: "#FE4F5A"}}>
+					<TimelineRow 
+						time={dayOneTimings[0]}
+						title={dayOneTitles[0]}
+						chipOneIcon={dayOneChipOneIcons[0]}
+						chipOneText={dayOneChipOneTexts[0]}
+						chipTwoIcon={dayOneChipTwoIcons[0]}
+						chipTwoText={dayOneChipTwoTexts[0]}
+					/>
 
-				<TimelineRow 
-					time={dayOneTimings[1]}
-					title={dayOneTitles[1]}
-					chipOneIcon={dayOneChipOneIcons[1]}
-					chipOneText={dayOneChipOneTexts[1]}
-					chipTwoIcon={dayOneChipTwoIcons[1]}
-					chipTwoText={dayOneChipTwoTexts[1]}
-				/>
+					<TimelineRow 
+						time={dayOneTimings[1]}
+						title={dayOneTitles[1]}
+						chipOneIcon={dayOneChipOneIcons[1]}
+						chipOneText={dayOneChipOneTexts[1]}
+						chipTwoIcon={dayOneChipTwoIcons[1]}
+						chipTwoText={dayOneChipTwoTexts[1]}
+					/>
 
-				<TimelineRow 
-					time={dayOneTimings[2]}
-					title={dayOneTitles[2]}
-					chipOneIcon={dayOneChipOneIcons[2]}
-					chipOneText={dayOneChipOneTexts[2]}
-					chipTwoIcon={dayOneChipTwoIcons[2]}
-					chipTwoText={dayOneChipTwoTexts[2]}
-				/>
+					<TimelineRow 
+						time={dayOneTimings[2]}
+						title={dayOneTitles[2]}
+						chipOneIcon={dayOneChipOneIcons[2]}
+						chipOneText={dayOneChipOneTexts[2]}
+						chipTwoIcon={dayOneChipTwoIcons[2]}
+						chipTwoText={dayOneChipTwoTexts[2]}
+					/>
 
-				<TimelineRow 
-					time={dayOneTimings[3]}
-					title={dayOneTitles[3]}
-					chipOneIcon={dayOneChipOneIcons[3]}
-					chipOneText={dayOneChipOneTexts[3]}
-					chipTwoIcon={dayOneChipTwoIcons[3]}
-					chipTwoText={dayOneChipTwoTexts[3]}
-				/>
+					<TimelineRow 
+						time={dayOneTimings[3]}
+						title={dayOneTitles[3]}
+						chipOneIcon={dayOneChipOneIcons[3]}
+						chipOneText={dayOneChipOneTexts[3]}
+						chipTwoIcon={dayOneChipTwoIcons[3]}
+						chipTwoText={dayOneChipTwoTexts[3]}
+					/>
+				</div>
 
 				
 				
@@ -284,9 +305,12 @@ const Timeline = () => {
 
 		<TabPanel>
 			<div className="tab-panel">
-				<h2 style={{color: "#FFBD00", fontWeight: "bold",}}>Day 2: Blockchain, December 8th 2020</h2>
-				<hr />
+
+			<div className="event-day-title">
+				<h2 style={{backgroundColor: "#FFBD00",color: "white", fontWeight: "bold",}}>Day 2: Blockchain, December 8th 2020</h2>
+			</div>
 				
+				<div className="event-rows" style={{borderColor: "#FFBD00"}}>
 				<TimelineRow 
 					time={dayTwoTimings[0]}
 					title={dayTwoTitles[0]}
@@ -322,7 +346,7 @@ const Timeline = () => {
 					chipTwoIcon={dayTwoChipTwoIcons[3]}
 					chipTwoText={dayTwoChipTwoTexts[3]}
 				/>
-
+				</div>
 				
 			</div>
 		</TabPanel>
@@ -333,9 +357,11 @@ const Timeline = () => {
 		
 			<TabPanel>
 			<div className="tab-panel">
-				<h2 style={{color: "#546DDD", fontWeight: "bold",}}>Day 3: AR/VR, December 9th 2020</h2>
-				<hr />
+				<div className="event-day-title">
+					<h2 style={{backgroundColor: "#546DDD",color: "white", fontWeight: "bold",}}>Day 3: AR/VR, December 9th 2020</h2>
+				</div>
 				
+				<div className="event-rows" style={{borderColor: "#546DDD"}}>
 				<TimelineRow 
 					time={dayThreeTimings[0]}
 					title={dayThreeTitles[0]}
@@ -372,6 +398,8 @@ const Timeline = () => {
 					chipTwoText={dayThreeChipTwoTexts[3]}
 				/>
 
+				</div>
+
 				
 			</div>
 		</TabPanel>
@@ -383,9 +411,11 @@ const Timeline = () => {
 
 			<TabPanel>
 			<div className="tab-panel">
-				<h2 style={{color: "#00A452", fontWeight: "bold",}}>Day 4: Web/Android, December 10th 2020</h2>
-				<hr />
+				<div className="event-day-title">
+					<h2 style={{backgroundColor: "#00A452",color: "white", fontWeight: "bold",}}>Day 4: Web/Android, December 10th 2020</h2>
+				</div>
 				
+				<div className="event-rows" style={{borderColor: "#00A452"}}>
 				<TimelineRow 
 					time={dayFourTimings[0]}
 					title={dayFourTitles[0]}
@@ -421,11 +451,12 @@ const Timeline = () => {
 					chipTwoIcon={dayFourChipTwoIcons[3]}
 					chipTwoText={dayFourChipTwoTexts[3]}
 				/>
-
+				</div>
 				
 			</div>
 		</TabPanel>
 	</Tabs>
+	</div>
 		</div>
 	)
 }

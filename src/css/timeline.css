@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 
-.timeline {
+.timeline-container {
 	max-width: 90% ;
 	margin: 0 auto;
 }
@@ -15,8 +15,21 @@
 	margin: 0 2px 0 2px;
 }
 
+.event-day-title {
+	color: white;
+	font-size: large;
+	margin: -9px 0 -8px 0px;
+}
+
+.event-rows {
+	border-right: 2px solid;
+	border-left: 2px solid;
+	border-bottom: 2px solid;
+	
+}
+
 .tab-panel {
-	margin: 20px 0 0 5px;
+	margin: 0px 0 0 0px;
 }
 
 .time {

@@ -13,27 +13,27 @@ const TimelineEvent = ({time,title,chipOneIcon,chipOneText,chipTwoIcon,chipTwoTe
 			<Tabs>
 
 				<Row>
-					<div className="col-3 text-center">
+					<div className="col-3 col-lg-6 text-center">
 						<span className="time">
 							{time}
 						</span>
 					</div>
 
-					<div className="col-9">
+					<div className="col-9 col-lg-6 text-left">
 						<span className="title">
 							{title}
 						</span>
 					</div>
 				</Row>
 				
-				<div className="chipContainer">
+				<div className="chipContainer justify-content-center">
 						<Row>
-							<div className="col-3">
+							<div className="col-3 col-lg-6">
 							
 							</div>
 
-							<div className="col-9">
-								<Row>
+							<div className="col-9 col-lg-6">
+								<Row className=" justify-content-left">
 									<button className="chip">
 										<img 
 											className="buttonImg" 
