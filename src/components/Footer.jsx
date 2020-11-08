@@ -23,11 +23,25 @@ function Footer() {
             <footer className="footer__main">
                 <div className="footer__left">
                     <img className="footer__dscLogo" src={dscwowLogo} alt=""></img>
+
                     <div className="footer__media">
-                        <FontAwesomeIcon icon={faFacebook} />
-                        <FontAwesomeIcon icon={faInstagram} />
-                        <FontAwesomeIcon icon={faLinkedin} />
-                        <FontAwesomeIcon icon={faTwitter} />
+
+                        <a href="https://www.facebook.com/dscwow">
+                        <FontAwesomeIcon icon={faFacebook} size="2x"/>
+                        </a>
+
+                        <a href="https://instagram.com/dscwow_?igshid=s66ymmaorjji">
+                        <FontAwesomeIcon icon={faInstagram} size="2x"/>
+                        </a>
+
+                        <a href="https://www.linkedin.com/company/dsc-wow">
+                        <FontAwesomeIcon icon={faLinkedin} size="2x"/>
+                        </a>
+
+                        <a href="https://twitter.com/DscWow?s=08">
+                        <FontAwesomeIcon icon={faTwitter} size="2x"/>
+                        </a>
+                        
                     </div>
                 </div>
                 <div className="footer__right">
