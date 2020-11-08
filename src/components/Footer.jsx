@@ -7,8 +7,6 @@ import {
     faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import '../css/footer.css'
-import wow from "../assets/wow.png";
-import dscLogo from "../assets/dscLogo.png";
 import dscwowLogo from "../assets/wow_logo.png";
 import { Link } from "react-scroll";
 
