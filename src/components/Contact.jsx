@@ -46,7 +46,7 @@ function Contact() {
                 </Col>
 
                 <div className="col-10 col-md-5 p-md-0">
-                    <div className="timeline">
+                    <div className="contact">
                         <p className="my-5">
                             Have a query that isn’t answered in the FAQ docs?
                             Want to sponsor DSC WOW?

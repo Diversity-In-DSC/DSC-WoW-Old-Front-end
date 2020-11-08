@@ -4,6 +4,14 @@
 	box-sizing: border-box;
 }
 
+.timeline{
+	font-size: 25px;
+}
+.timeline p{
+	font-weight: 400;
+	font-size: 20px;
+}
+
 .timeline-container {
 	max-width: 90% ;
 	margin: 0 auto;

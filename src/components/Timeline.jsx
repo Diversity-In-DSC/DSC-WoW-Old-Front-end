@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import 'react-tabs/style/react-tabs.css';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import {  Row } from 'react-bootstrap';
@@ -188,8 +188,6 @@ const Timeline = () => {
 	// Data end
 
 
-	const [currentTab,setCurrentTab] = useState(1);
-
 
 	return (
 		<div className="timeline-container">
@@ -217,7 +215,6 @@ const Timeline = () => {
 		<Tabs>
 		<TabList style={{color: "white"}}>
 					<Tab 
-						onClick={() => setCurrentTab(1)}
 						style={{background: "#FE4F5A", borderTopRightRadius: "10px", borderTopLeftRadius: "10px", margin: "0 2px 0 2px",
 						 fontSize: "20px",}}
 						>
@@ -225,7 +222,6 @@ const Timeline = () => {
 					</Tab>
 								
 					<Tab 
-						onClick={() => setCurrentTab(2)}
 						style={{background: "#FFBD00", borderTopRightRadius: "10px", borderTopLeftRadius: "10px", margin: "0 2px 0 2px",
 								fontSize: "20px",}}
 						>
@@ -233,7 +229,6 @@ const Timeline = () => {
 					</Tab>
 								
 					<Tab 
-						onClick={() => setCurrentTab(3)}
 						style={{background: "#546DDD", borderTopRightRadius: "10px", borderTopLeftRadius: "10px", margin: "0 2px 0 2px",
 								fontSize: "20px",}}
 					>
@@ -241,7 +236,6 @@ const Timeline = () => {
 					</Tab>
 							
 					<Tab 
-						onClick={() => setCurrentTab(4)}
 						style={{background: "#00A452", borderTopRightRadius: "10px", borderTopLeftRadius: "10px", margin: "0 2px 0 2px",
 								fontSize: "20px",}}
 					>

@@ -3,6 +3,14 @@
     height: auto;
 }
 
+.sponsors{
+    font-size: 25px;
+}
+.sponsors p{
+    font-weight: 400;
+    font-size: 20px;
+}
+
 .image__DSC{
     display: block;
     content: url('../assets/dscbvppune.png');
