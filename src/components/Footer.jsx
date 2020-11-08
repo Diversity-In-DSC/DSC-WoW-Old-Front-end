@@ -9,6 +9,7 @@ import {
 import '../css/footer.css'
 import wow from "../assets/wow.png";
 import dscLogo from "../assets/dscLogo.png";
+import dscwowLogo from "../assets/wow_logo.png";
 import { Link } from "react-scroll";
 
 function Footer() {
@@ -23,8 +24,7 @@ function Footer() {
         <>
             <footer className="footer__main">
                 <div className="footer__left">
-                    <img className="footer__dscLogo" src={dscLogo} alt=""></img>
-                    <img className="footer__wowLogo" src={wow} alt=""></img>
+                    <img className="footer__dscLogo" src={dscwowLogo} alt=""></img>
                     <div className="footer__media">
                         <FontAwesomeIcon icon={faFacebook} />
                         <FontAwesomeIcon icon={faInstagram} />
