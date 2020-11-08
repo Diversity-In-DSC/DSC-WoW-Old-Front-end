@@ -1,0 +1,58 @@
+.sponsor-img img{
+    max-width: 100%;
+    height: auto;
+}
+
+.image__DSC{
+    display: block;
+    content: url('../assets/dscbvppune.png');
+}
+
+.dark .image__DSC{
+    content: url('../assets/dscbvppune__dark.png'); 
+}
+
+.image__GDGPune{
+    display: block;
+    content: url('../assets/gdg\ pune.png');
+}
+
+.dark .image__GDGPune{
+    content: url('../assets/gdg\ pune__dark.png'); 
+}
+
+.image__devfolio{
+    display: block;
+    content: url('../assets/devfolio.png');
+}
+
+.dark .image__devfolio{
+    content: url('../assets/devfolio__dark.png'); 
+}
+
+.image__matic{
+    display: block;
+    content: url('../assets/matic.png');
+}
+
+.dark .image__matic{
+    content: url('../assets/matic__dark.png'); 
+}
+
+.image__fold{
+    display: block;
+    content: url('../assets/fold.png');
+}
+
+.dark .image__fold{
+    content: url('../assets/fold__dark.png'); 
+}
+
+.image__portis{
+    display: block;
+    content: url('../assets/portis.png');
+}
+
+.dark .image__portis{
+    content: url('../assets/portis__dark.png'); 
+}
