@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import '../css/hero.css'
-import dscgroup from '../assets/DSCwow.png'
+import dscgroup from '../assets/aboutusgif.gif'
 
 class Hero extends Component {
     render() {
