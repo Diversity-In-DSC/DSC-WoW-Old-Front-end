@@ -15,12 +15,11 @@
     "static/css/main.57881e81.chunk.css.map": "/static/css/main.57881e81.chunk.css.map",
     "static/js/2.97deff11.chunk.js.LICENSE.txt": "/static/js/2.97deff11.chunk.js.LICENSE.txt",
     "static/media/AboutUs.png": "/static/media/AboutUs.84f8f034.png",
-    "static/media/DSCwow.png": "/static/media/DSCwow.6c74c0eb.png",
-    "static/media/contact.png": "/static/media/contact.669fc015.png",
+    "static/media/aboutusgif.gif": "/static/media/aboutusgif.233fcf99.gif",
+    "static/media/contactusgif.gif": "/static/media/contactusgif.2bb9c03a.gif",
     "static/media/darkMode.165a8a7f.svg": "/static/media/darkMode.165a8a7f.svg",
     "static/media/sponsor.css": "/static/media/portis__dark.54370995.png",
     "static/media/digital.png": "/static/media/digital.5673367e.png",
-    "static/media/dscLogo.png": "/static/media/dscLogo.c4a618a6.png",
     "static/media/dsc_linear.png": "/static/media/dsc_linear.61123d7a.png",
     "static/media/echo.png": "/static/media/echo.4692c570.png",
     "static/media/fb.png": "/static/media/fb.f9c881da.png",
@@ -29,7 +28,7 @@
     "static/media/portis.svg": "/static/media/portis.fc047269.svg",
     "static/media/speaker1.jpg": "/static/media/speaker1.95d60f30.jpg",
     "static/media/timeline.png": "/static/media/timeline.4bc1c9dc.png",
-    "static/media/wow.png": "/static/media/wow.482a9ff8.png"
+    "static/media/wow_logo.png": "/static/media/wow_logo.7fc5c0ab.png"
   },
   "entrypoints": [
     "static/js/runtime-main.c8a21426.js",

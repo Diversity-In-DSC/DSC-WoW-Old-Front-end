@@ -1,6 +1,6 @@
 import React, { useState} from 'react'
 import '../css/contact.css'
-import contact from '../assets/contact.png';
+import contact from '../assets/contactusgif.gif';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'
 
