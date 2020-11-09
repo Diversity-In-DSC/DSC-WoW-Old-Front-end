@@ -2,6 +2,9 @@ import React from 'react';
 import speaker1 from '../assets/speaker1.jpg';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
+import siddhantsgarwalphoto from '../assets/siddhantagarwal.jpg';
+import biswajeetmallikphoto from '../assets/biswajeetmallik.jpeg';
+import nikitagandhiphoto from '../assets/nikitagandhiphoto.jpg';
 
 //css
 import '../css/Speaker.css'
@@ -10,26 +13,26 @@ const Speaker=()=> {
     const speakers = [
         {
             id:1,
-            name:'Swarnim Gupta',
-            position:'Microsoft',
-            img:speaker1,
+            name:'Siddhant Agarwal',
+            position:'Google',
+            img:siddhantsgarwalphoto,
             linkedin:'https://www.linkedin.com/in/swarnim-gupta01',
             twitter:'https://twitter.com/Swarnim31645040'
             
         },{
             id:2,
-            name:'Swarnim Gupta',
-            position:'Microsoft',
-            img:speaker1,
-            linkedin:'https://www.linkedin.com/in/swarnim-gupta01',
-            twitter:'https://twitter.com/Swarnim31645040'            
+            name:'Biswajeet Mallik',
+            position:'Google',
+            img:biswajeetmallikphoto,
+            linkedin:'https://www.linkedin.com/in/sidagarwal04/',
+            twitter:'https://twitter.com/sidagarwal04'            
         },{
             id:3,
-            name:'Swarnim Gupta',
-            position:'Microsoft',
-            img:speaker1,
-            linkedin:'https://www.linkedin.com/in/swarnim-gupta01',
-            twitter:'https://twitter.com/Swarnim31645040'            
+            name:'Nikita Gandhi',
+            position:'Google',
+            img:nikitagandhiphoto,
+            linkedin:'https://www.linkedin.com/in/nikita-gandhi01/',
+            twitter:'https://twitter.com/Nikkitagandhi'            
         },{
             id:4,
             name:'Swarnim Gupta',
