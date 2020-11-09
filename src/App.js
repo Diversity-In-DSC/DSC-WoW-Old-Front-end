@@ -2,7 +2,7 @@ import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './css/index.css'
 
-import Navbar from './components/Navbar'
+import Navbar from './components/Nav/Navbar';
 import Hero from './components/Hero'
 import Faq from './components/Faq'
 import AboutUs from './components/AboutUs'
@@ -17,7 +17,7 @@ import './index.css';
 function App() {
   return (
     <>
-      <Navbar />
+      <Navbar/>
 
       <div id="home">
         <Hero />
