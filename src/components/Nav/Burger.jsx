@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 import styled from 'styled-components';
 import RightNav from './RightNav';
 
@@ -6,6 +7,7 @@ const StyledBurger = styled.div`
   width: 2rem;
   height: 2rem;
   position: fixed;
+  cursor:pointer;
   top: 15px;
   right: 20px;
   z-index: 20;
@@ -48,14 +50,20 @@ const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
-
+  cursor:pointer;
+  font-size:20px;
+  text-transform:uppercase;
   li {
     padding: 18px 10px;
   }
 
+  li:hover{
+    font-size: 26px;
+  }
+
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    background-color: #0D2538;
+    background-color: white;
     position: fixed;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;
@@ -66,9 +74,6 @@ const Ul = styled.ul`
     transition: transform 0.3s ease-in-out;
     z-index:2;
 
-    li {
-      color: #fff;
-    }
   }
 `;
 
@@ -112,6 +117,7 @@ const CloseButton = styled.div`
 
 const Burger = () => {
   const [open, setOpen] = useState(false)
+  const backgroundColor = useState(document.body.style)
   const styles = {
     container: {
       height: "auto",
@@ -141,9 +147,15 @@ const Burger = () => {
       marginTop: '5px',
     },       
   }
+  const triggerClick = () =>{
+    document.body.style = open ? 
+    'background: white;'
+    : 'background: grey;';
+    setOpen(!open)
+  }
   return (
     <>
-      <StyledBurger style = {{zIndex:"1"}} open={open} onClick={() => setOpen(!open)}>
+      <StyledBurger style = {{zIndex:"1"}} open={open} onClick={() => triggerClick()}>
           <div style={{...styles.line,...styles.lineTop}}/>
           <div style={{...styles.line,...styles.lineMiddle}}/>
           <div style={{...styles.line,...styles.lineBottom}}/>
@@ -152,7 +164,7 @@ const Burger = () => {
       <div>
       {
         open ?
-       <CloseButton open={open} onClick={() => setOpen(!open)}>
+      <CloseButton open={open} onClick={() => triggerClick()}>
         <div />
         <div />
         <div />
@@ -160,12 +172,71 @@ const Burger = () => {
       : <></>
       }
 
-    <Ul open={open}>
-      <li>Home</li>
-      <li>About Us</li>
-      <li>Contact Us</li>
-      <li>Sign In</li>
-      <li>Sign Up</li>
+    <Ul open={open} className="nav">
+    <li class="nav-item">
+      <Link
+        activeClass="active"
+        to="home"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={700}
+        >Home</Link>
+    </li>
+    <li class="nav-item">
+      <Link
+        activeClass="active"
+        to="aboutus"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={700}
+      >About Us</Link></li>
+      <li class="nav-item">
+      <Link
+        activeClass="active"
+        to="speakers"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={700}
+      >Speakers</Link></li>
+      <li class="nav-item">
+      <Link
+        activeClass="active"
+        to="sponsors"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={700}
+      >Sponsors</Link></li>
+      <li class="nav-item">
+      <Link
+        activeClass="active"
+        to="timeline"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={700}
+      >Timeline</Link></li>
+      <li class="nav-item">
+      <Link
+        activeClass="active"
+        to="faq"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={700}        
+      >FAQ</Link></li>
+      <li class="nav-item">
+      <Link
+        activeClass="active"
+        to="contact"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={700}
+      >Contact Us</Link></li>
     </Ul>
     </div>
     </>

@@ -9,10 +9,11 @@ import DarkModeButton from '../DarkModeButton';
 
 const Nav = styled.nav`
   width: 100%;
-  height: 60px;
+  height: 70px;
   border-bottom: 2px solid #f1f1f1;
   z-index:1;
   display: flex;
+  background-color:white;
   justify-content: space-between;
 
   .logo {
@@ -23,13 +24,17 @@ const Nav = styled.nav`
 const Navbar = () => {
   return (
     <Nav>
-      <Row className="logo" style={{border:"1px solid red"}}>
-        <Col md={4} xs={8} >
+      <Row className="logo" >
+        <Col md={4} xs={10}>
             <img src={dsclogo} alt = "DSC_Logo" style={{ width:"100%"}}/>
         </Col>
+        {/* <Col style={{border:"1px solid red",width:"10px"}} >
+          <DarkModeButton />
+        </Col> */}
+        <Col xs={0} sm={0} md={{ span: 6, offset: 2 }} >
+          <Burger />
+        </Col>
       </Row>
-      <DarkModeButton />
-      <Burger />
     </Nav>
   )
 }
