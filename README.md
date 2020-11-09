@@ -11,9 +11,7 @@ URL : <https://dscwow.tech/>
 - Create a new project and give it a cool name.
 - Activate google cloud shell using the cloud shell ![cloud_shell](https://user-images.githubusercontent.com/31778302/97112839-97dfb900-170c-11eb-9cc0-de158a1b7cf4.png) icon on the top right.
 - Clone the repo in cloud shell using `git clone https://github.com/Diversity-In-DSC/dsc-webathon.git`
-- ange working directory to the webathon repo `cd dsc-webathon`
-- Remove all the unnecessary files (all files/folders except `frontend/` directory) `sudo rm -rf <file_name>`
-- Change working directory to the `frontend/` directory `cd frontend/`
+- Change directory `cd dsc-webathon`
 - Install the dependencies `npm install` or `npm i`
 - Build the React.js app `npm run build`
 - Remove all the other files/folder except for the `build/` folder `sudo rm -rf <file_name>`
