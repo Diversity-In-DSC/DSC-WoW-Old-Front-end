@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import aboutus from '../assets/AboutUs.png';
+import aboutus from '../assets/aboutusgif12.gif';
 import { Row } from 'react-bootstrap';
 
 class AboutUs extends Component {
