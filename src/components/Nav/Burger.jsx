@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import RightNav from './RightNav';
 
 const StyledBurger = styled.div`
-  width: 2rem;
+  width: 2.5rem;
   height: 2rem;
   position: fixed;
   cursor:pointer;
@@ -23,25 +23,25 @@ const StyledBurger = styled.div`
 
     &:nth-child(1) {
       background:#FE4F5A;
-      width:64px;
+      width:100%;
       height:6px;
     }
     
     &:nth-child(2) {
       background:#00A452;
-      width:54px;
+      width:85%;
       height:6px;
     }
 
     &:nth-child(3) {
       background:#008DFF;
-      width:42px;
+      width:70%;
       height:6px;
     }
 
     &:nth-child(4) {
       background:#FFBD00;
-      width:32px;
+      width:55%;
       height:6px;
     }
   }
