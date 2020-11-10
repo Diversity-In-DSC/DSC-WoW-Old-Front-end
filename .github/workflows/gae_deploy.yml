@@ -28,4 +28,4 @@ jobs:
     - name: Keep only files for GAE
       run: rm -vrf !("build"|"app.yaml")
     - name: Deploy
-        gcloud app deploy --project=${{ secrets.PROJECT_ID }} --quiet
+      run: gcloud app deploy --project=${{ secrets.PROJECT_ID }} --quiet
