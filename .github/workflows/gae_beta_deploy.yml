@@ -1,0 +1,31 @@
+name: GAE Beta Deploy
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@main
+    - name: Initialize Google Cloud SDK
+      uses: zxyle/publish-gae-action@master
+      with:
+        service_account_email: ${{ secrets.GCP_SA_EMAIL }}
+        service_account_key: ${{ secrets.GCP_SA_KEY }}
+        project_id: ${{ secrets.PROJECT_ID }}
+    - name: Setup gcloud
+      run: |
+        gcloud auth activate-service-account ${{ secrets.GCP_SA_EMAIL }} --key-file=client-secret.json
+        gcloud config set project ${{ secrets.PROJECT_ID }}
+    - name: Install dependencies
+      run: npm i
+    - name: Build
+      env: 
+        CI: ""
+      run: npm run build
+    - name: Remove older GAE app versions
+      run: bash delete-older-gcloud-app-versions.sh default 2
+    - name: Deploy
+      run: gcloud app deploy --project=${{ secrets.PROJECT_ID }} --quiet --no-promote
