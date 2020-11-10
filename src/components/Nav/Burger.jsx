@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import styled from 'styled-components';
+import history from '../../_history';
+
+import { routeConstant } from '../../_constants';
 import RightNav from './RightNav';
 
 const StyledBurger = styled.div`
@@ -116,8 +119,10 @@ const CloseButton = styled.div`
 `;
 
 const Burger = () => {
+
   const [open, setOpen] = useState(false)
   const backgroundColor = useState(document.body.style)
+
   const styles = {
     container: {
       height: "auto",
@@ -147,11 +152,28 @@ const Burger = () => {
       marginTop: '5px',
     },       
   }
+
+  const {
+    HOME,
+    ABOUT,
+    SPEAKERS,
+    SPONSORS,
+    TIMELINE,
+    COLLABORATORS,
+    FAQ,
+    CONTACT
+  } = routeConstant
+
   const triggerClick = () =>{
     document.body.style = open ? 
     'background: white;'
     : 'background: grey;';
     setOpen(!open)
+  }
+
+  const handleClick = (route) =>{
+    history.push(route);
+    window.location.reload()
   }
   return (
     <>
@@ -173,70 +195,13 @@ const Burger = () => {
       }
 
     <Ul open={open} className="nav">
-    <li class="nav-item">
-      <Link
-        activeClass="active"
-        to="home"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={700}
-        >Home</Link>
-    </li>
-    <li class="nav-item">
-      <Link
-        activeClass="active"
-        to="aboutus"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={700}
-      >About Us</Link></li>
-      <li class="nav-item">
-      <Link
-        activeClass="active"
-        to="speakers"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={700}
-      >Speakers</Link></li>
-      <li class="nav-item">
-      <Link
-        activeClass="active"
-        to="sponsors"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={700}
-      >Sponsors</Link></li>
-      <li class="nav-item">
-      <Link
-        activeClass="active"
-        to="timeline"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={700}
-      >Timeline</Link></li>
-      <li class="nav-item">
-      <Link
-        activeClass="active"
-        to="faq"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={700}        
-      >FAQ</Link></li>
-      <li class="nav-item">
-      <Link
-        activeClass="active"
-        to="contact"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={700}
-      >Contact Us</Link></li>
+      <li class="nav-item" onClick={()=>handleClick(HOME)}>Home</li>
+      <li class="nav-item" onClick={()=>handleClick(ABOUT)}>About Us</li>
+      <li class="nav-item" onClick={()=>handleClick(SPEAKERS)}>Speakers</li>
+      <li class="nav-item" onClick={()=>handleClick(SPONSORS)}>Sponsors</li>
+      <li class="nav-item" onClick={()=>handleClick(TIMELINE)}>Timeline</li>
+      <li class="nav-item" onClick={()=>handleClick(FAQ)}>FAQ</li>
+      <li class="nav-item" onClick={()=>handleClick(CONTACT)}>Contact Us</li>
     </Ul>
     </div>
     </>
