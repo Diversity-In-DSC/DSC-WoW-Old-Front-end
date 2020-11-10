@@ -29,15 +29,15 @@ function Footer() {
                         <a href="https://www.facebook.com/dscwow">
                         <FontAwesomeIcon icon={faFacebook} size="2x"/>
                         </a>
-
+                        &nbsp;&nbsp;
                         <a href="https://instagram.com/dscwow_?igshid=s66ymmaorjji">
                         <FontAwesomeIcon icon={faInstagram} size="2x"/>
                         </a>
-
+                        &nbsp;&nbsp;    
                         <a href="https://www.linkedin.com/company/dsc-wow">
                         <FontAwesomeIcon icon={faLinkedin} size="2x"/>
                         </a>
-
+                        &nbsp;&nbsp;
                         <a href="https://twitter.com/DscWow?s=08">
                         <FontAwesomeIcon icon={faTwitter} size="2x"/>
                         </a>
