@@ -1,4 +1,4 @@
-name: GAE Deploy
+name: GAE Beta Deploy
 
 on:
   pull_request:
