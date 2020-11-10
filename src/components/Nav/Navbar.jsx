@@ -16,8 +16,14 @@ const Nav = styled.nav`
   background-color:white;
   justify-content: space-between;
 
-  .logo {
-    padding: 5px 1em 0 2em;
+  img {
+    padding: 10px 1em 0 2em;
+  }
+  @media (max-width: 768px) {
+    img{
+      padding: 1em 0.5em 0 1em;
+    }
+
   }
 `
 
@@ -31,7 +37,7 @@ const Navbar = () => {
         {/* <Col style={{border:"1px solid red",width:"10px"}} >
           <DarkModeButton />
         </Col> */}
-        <Col xs={0} sm={0} md={{ span: 6, offset: 2 }} >
+        <Col xs={0} sm={0} md={{ span: 6, offset: 2 }}>
           <Burger />
         </Col>
       </Row>
