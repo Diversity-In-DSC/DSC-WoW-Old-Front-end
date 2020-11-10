@@ -1,4 +1,9 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './css/index.css'
 
@@ -18,41 +23,60 @@ function App() {
   return (
     <>
       <Navbar/>
+    <Router>
+      <Navbar />
+      <Switch>
+        <Route path="/about">
+          <div id="aboutus">
+            <AboutUs />
+          </div>
+        </Route>
 
-      <div id="home">
-        <Hero />
-      </div>
+        <Route path="/speakers">
+          <div id="speakers">
+            <Speaker />
+          </div>
+        </Route>
 
-      <div id="aboutus">
-        <AboutUs />
-      </div>
+        <Route path="/sponsors">
+          <div id="sponsors">
+            <Sponsor />
+          </div>
+        </Route>
 
-      <div id="speakers">
-        <Speaker />
-      </div>
+        <Route path="/timeline">
+          <div id="timeline">
+            <Timeline />
+          </div>
+        </Route>
 
-      <div id="sponsors">
-        <Sponsor />
-      </div>
+        <Route path="/collaborators">
+          <div id="collaborators">
+            <Collaborators />
+          </div>
+        </Route>
 
-      <div id="timeline">
-        <Timeline />
-      </div>
+        <Route path="/faq">
+          <div id="faq">
+            <Faq />
+          </div>
+        </Route>
 
-      <div id="collaborators">
-        <Collaborators />
-      </div>
+        <Route path="/contact">
+          <div id="contact">
+            <Contact />
+          </div>
+        </Route>
 
-      <div id="faq">
-        <Faq />
-      </div>
-
-      <div id="contact">
-        <Contact />
-      </div>
+        <Route exact path="/">
+          <div id="home">
+            <Hero />
+          </div>
+        </Route>
+      </Switch>
 
       <Footer />
-    </>
+    </Router>
   );
 }
 
