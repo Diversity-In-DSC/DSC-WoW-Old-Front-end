@@ -27,7 +27,5 @@ jobs:
       run: npm run build
     - name: Remove older GAE app versions
       run: bash delete-older-gcloud-app-versions.sh default 2
-    - name: Keep only files for GAE
-      run: rm -vrf !("build"|"app.yaml")
     - name: Deploy
       run: gcloud app deploy --project=${{ secrets.PROJECT_ID }} --quiet
