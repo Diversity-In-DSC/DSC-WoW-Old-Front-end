@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Faq from 'react-faq-component';
-import '../css/faq.css'
+import {Row, Col} from 'react-bootstrap';
 
 
 const data = {
@@ -33,21 +33,22 @@ export default class App extends Component {
   render() {
     return (
       <div>
-      <div className="faq_sec">
-      <Faq data={data} styles={{
-                   bgColor: "white",
-                   titleTextColor: "black",
-                   rowTitleColor: "black",
-                   rowTitleTextSize: '20px',
-                   rowContentColor: "#5b5e5b",
-                   rowContentTextSize: '19px',
-                    rowContentPaddingTop: '10px',
-                    rowContentPaddingBottom: '10px',
-                    rowContentPaddingLeft: '50px',
-                    rowContentPaddingRight: '150px',
-                   arrowColor: "blue",
-                   }} />
-      </div>
+      <Row className="justify-content-center">
+        <Col md={8} xs={8}>
+          <Faq data={data} styles={{
+                    bgColor: "white",
+                    titleTextColor: "black",
+                    rowTitleColor: "black",
+                    rowTitleTextSize: '20px',
+                    rowContentColor: "#5b5e5b",
+                    rowContentTextSize: '19px',
+                      rowContentPaddingTop: '10px',
+                      rowContentPaddingBottom: '10px',
+                    arrowColor: "blue",
+                    }} 
+            />
+        </Col>
+      </Row>
       </div>
     )
   }
