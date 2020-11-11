@@ -46,4 +46,4 @@ Joining existing team worked similar to that of devfolio. After creating a new t
 Each team can submit one projects with project_name, git_link, deployment_link, description, etc.
 
 ##### New Repo
-The backend repo has been moved to https://github.com/ShauryaAg/Webathon-Backend
+The backend repo has been moved to https://github.com/Diversity-In-DSC/DSC-WoW-Backend
