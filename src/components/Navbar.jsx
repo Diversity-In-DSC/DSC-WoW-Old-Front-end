@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import { Col, Row } from 'react-bootstrap'
 import "../css/navbar.css";
 import dsclogo from "../assets/dsc_linear.png";
-import { Link } from "react-scroll";
-import { Link } from "react-router";
+// import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import MenuButton from "./MenuButton";
 import DarkModeButton from './DarkModeButton';
 export class Navbar extends Component {
@@ -114,6 +114,14 @@ export class Navbar extends Component {
                             offset={-70}
                             duration={700}
                         >Contact Us</Link>
+                        </h3><h3 style={{ marginLeft: "68%" }}><Link
+                            activeClass="active"
+                            to="/register"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={700}
+                        >Register</Link>
                         </h3>
                     </div>
                 </div>

@@ -18,6 +18,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Collaborators from './components/Collaborators';
 import './index.css';
+import Register from './components/Register';
 
 function App() {
   return (
@@ -69,6 +70,12 @@ function App() {
         <Route exact path="/">
           <div id="home">
             <Hero />
+          </div>
+        </Route>
+        <Route path="/register">
+          <div id="register">
+          <h1>Register Now</h1>
+            <Register />
           </div>
         </Route>
       </Switch>
