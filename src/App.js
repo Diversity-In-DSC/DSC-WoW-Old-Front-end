@@ -6,7 +6,9 @@ import {
 } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './css/index.css'
+import history from './_history';
 
+import {routeConstant} from './_constants';
 import Navbar from './components/Nav/Navbar';
 import Hero from './components/Hero'
 import Faq from './components/Faq'
@@ -20,55 +22,66 @@ import Collaborators from './components/Collaborators';
 import './index.css';
 
 function App() {
+
+  const {
+    HOME,
+    ABOUT,
+    SPEAKERS,
+    SPONSORS,
+    TIMELINE,
+    COLLABORATORS,
+    FAQ,
+    CONTACT
+  } = routeConstant
+
   return (
     <>
       <Navbar/>
-    <Router>
-      <Navbar />
+    <Router history={history}>
       <Switch>
-        <Route path="/about">
+        <Route path={ABOUT}>
           <div id="aboutus">
             <AboutUs />
           </div>
         </Route>
 
-        <Route path="/speakers">
+        <Route path={SPEAKERS}>
           <div id="speakers">
             <Speaker />
           </div>
         </Route>
 
-        <Route path="/sponsors">
+        <Route path={SPONSORS}>
           <div id="sponsors">
             <Sponsor />
           </div>
         </Route>
 
-        <Route path="/timeline">
+        <Route path={TIMELINE}>
           <div id="timeline">
             <Timeline />
           </div>
         </Route>
 
-        <Route path="/collaborators">
+        <Route path={COLLABORATORS}>
           <div id="collaborators">
             <Collaborators />
           </div>
         </Route>
 
-        <Route path="/faq">
+        <Route path={FAQ}>
           <div id="faq">
             <Faq />
           </div>
         </Route>
 
-        <Route path="/contact">
+        <Route path={CONTACT}>
           <div id="contact">
             <Contact />
           </div>
         </Route>
 
-        <Route exact path="/">
+        <Route exact path={HOME}>
           <div id="home">
             <Hero />
           </div>
@@ -77,6 +90,7 @@ function App() {
 
       <Footer />
     </Router>
+    </>
   );
 }
 
