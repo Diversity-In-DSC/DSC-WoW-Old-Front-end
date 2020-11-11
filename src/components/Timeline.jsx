@@ -11,11 +11,18 @@ const Timeline = () => {
 
     // Day 1 Data 
 
-	const dayOneTimings = [
-		"5:00 PM - 5:30 PM",
-		"5:30 PM - 6:30 PM",
-		"6:30 PM - 7:00 PM",
-		"7:00 PM - 8:00 PM",
+	const dayOneStartTimings = [
+		"5:00 PM",
+		"5:30 PM",
+		"6:30 PM",
+		"7:00 PM",
+	];
+
+	const dayOneEndTimings = [
+		"- 5:30 PM",
+		"- 6:30 PM",
+		"- 7:00 PM",
+		"- 8:00 PM",
 	];
 
 	const dayOneTitles = [
@@ -25,28 +32,14 @@ const Timeline = () => {
 		"Technical - AMA for AI/ML",
 	];
 
-	const dayOneChipOneIcons = [
-		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
-		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
-		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
-		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
-	]
-
-	const dayOneChipOneTexts = [
-		"Keynote ",
-		"Technical",
-		"Icebreaker",
-		"Ask Me Anything",
-	]
-	
-	const dayOneChipTwoIcons = [
+	const dayOneChipIcons = [
 		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
 		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
 		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
 		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
 	]
 
-	const dayOneChipTwoTexts = [
+	const dayOneChipTexts = [
 		"Speaker 1",
 		"Speaker 2",
 		"Speaker 3",
@@ -55,11 +48,18 @@ const Timeline = () => {
 
 	// Day 2 Data 
 
-	const dayTwoTimings = [
-		"5:00 PM - 5:30 PM",
-		"5:30 PM - 6:30 PM",
-		"6:30 PM - 7:00 PM",
-		"7:00 PM - 8:00 PM",
+	const dayTwoStartTimings = [
+		"5:00 PM",
+		"5:30 PM",
+		"6:30 PM",
+		"7:00 PM",
+	];
+
+	const dayTwoEndTimings = [
+		"- 5:30 PM",
+		"- 6:30 PM",
+		"- 7:00 PM",
+		"- 8:00 PM",
 	];
 
 	const dayTwoTitles = [
@@ -68,29 +68,15 @@ const Timeline = () => {
 		"Icebreakers",
 		"Technical - AMA for Blockchain",
 	];
-
-	const dayTwoChipOneIcons = [
-		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
-		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
-		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
-		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
-	]
-
-	const dayTwoChipOneTexts = [
-		"Keynote ",
-		"Technical",
-		"Icebreaker",
-		"Ask Me Anything",
-	]
 	
-	const dayTwoChipTwoIcons = [
+	const dayTwoChipIcons = [
 		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
 		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
 		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
 		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
 	]
 
-	const dayTwoChipTwoTexts = [
+	const dayTwoChipTexts = [
 		"Speaker 1",
 		"Speaker 2",
 		"Speaker 3",
@@ -99,12 +85,19 @@ const Timeline = () => {
 
 // Day 3 Data 
 
-	const dayThreeTimings = [
-		"5:00 PM - 5:30 PM",
-		"5:30 PM - 6:30 PM",
-		"6:30 PM - 7:00 PM",
-		"7:00 PM - 8:00 PM",
-	];
+const dayThreeStartTimings = [
+	"5:00 PM",
+	"5:30 PM",
+	"6:30 PM",
+	"7:00 PM",
+];
+
+const dayThreeEndTimings = [
+	"- 5:30 PM",
+	"- 6:30 PM",
+	"- 7:00 PM",
+	"- 8:00 PM",
+];
 
 	const dayThreeTitles = [
 		"Keynote Speaker Session",
@@ -112,29 +105,15 @@ const Timeline = () => {
 		"Icebreakers",
 		"Technical - AMA for AR/VR",
 	];
-
-	const dayThreeChipOneIcons = [
-		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
-		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
-		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
-		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
-	]
-
-	const dayThreeChipOneTexts = [
-		"Keynote ",
-		"Technical",
-		"Icebreaker",
-		"Ask Me Anything",
-	]
 	
-	const dayThreeChipTwoIcons = [
+	const dayThreeChipIcons = [
 		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
 		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
 		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
 		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
 	]
 
-	const dayThreeChipTwoTexts = [
+	const dayThreeChipTexts = [
 		"Speaker 1",
 		"Speaker 2",
 		"Speaker 3",
@@ -143,11 +122,18 @@ const Timeline = () => {
 
 	// Day 4 Data 
 
-	const dayFourTimings = [
-		"5:00 PM - 5:30 PM",
-		"5:30 PM - 6:30 PM",
-		"6:30 PM - 7:00 PM",
-		"7:00 PM - 8:00 PM",
+	const dayFourStartTimings = [
+		"5:00 PM",
+		"5:30 PM",
+		"6:30 PM",
+		"7:00 PM",
+	];
+
+	const dayFourEndTimings = [
+		"- 5:30 PM",
+		"- 6:30 PM",
+		"- 7:00 PM",
+		"- 8:00 PM",
 	];
 
 	const dayFourTitles = [
@@ -156,29 +142,15 @@ const Timeline = () => {
 		"Icebreakers",
 		"Technical - AMA for AI/ML",
 	];
-
-	const dayFourChipOneIcons = [
-		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
-		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
-		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
-		"https://cdn.iconscout.com/icon/free/png-512/tesla-14-892143.png",
-	]
-
-	const dayFourChipOneTexts = [
-		"Keynote ",
-		"Technical",
-		"Icebreaker",
-		"Ask Me Anything",
-	]
 	
-	const dayFourChipTwoIcons = [
+	const dayFourChipIcons = [
 		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
 		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
 		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
 		"https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
 	]
 
-	const dayFourChipTwoTexts = [
+	const dayFourChipTexts = [
 		"Speaker 1",
 		"Speaker 2",
 		"Speaker 3",
@@ -188,8 +160,9 @@ const Timeline = () => {
 	// Data end
 
 
+
 	return (
-		<div className="timeline">
+		<div className="timeline-container">
 
 		<Row md={7} className="justify-content-center p-md-0">
 		<h1>Timeline</h1>
@@ -210,25 +183,36 @@ const Timeline = () => {
 			</div>
 	</div>
 
-
+		<div className="schedule-container text-center ">
 		<Tabs>
 		<TabList style={{color: "white"}}>
-            <Tab style={{background: "#FE4F5A", borderTopRightRadius: "10px", borderTopLeftRadius: "10px", margin: "0 2px 0 2px",
-             fontSize: "20px",}}>
-			1. AI/ML
-			</Tab>
-            <Tab style={{background: "#FFBD00", borderTopRightRadius: "10px", borderTopLeftRadius: "10px", margin: "0 2px 0 2px",
-             fontSize: "20px",}}>
-			2. Blockchain
-			</Tab>
-            <Tab style={{background: "#546DDD", borderTopRightRadius: "10px", borderTopLeftRadius: "10px", margin: "0 2px 0 2px",
-             fontSize: "20px",}}>
-			3. AR/VR
-			</Tab>
-            <Tab style={{background: "#00A452", borderTopRightRadius: "10px", borderTopLeftRadius: "10px", margin: "0 2px 0 2px",
-             fontSize: "20px",}}>
-			4. Web/Android
-			</Tab>
+					<Tab 
+						style={{background: "#FE4F5A", borderTopRightRadius: "10px", borderTopLeftRadius: "10px", margin: "0 2px 0 2px",
+						 fontSize: "20px",}}
+						>
+					1. AI/ML
+					</Tab>
+								
+					<Tab 
+						style={{background: "#FFBD00", borderTopRightRadius: "10px", borderTopLeftRadius: "10px", margin: "0 2px 0 2px",
+								fontSize: "20px",}}
+						>
+					2. Blockchain
+					</Tab>
+								
+					<Tab 
+						style={{background: "#546DDD", borderTopRightRadius: "10px", borderTopLeftRadius: "10px", margin: "0 2px 0 2px",
+								fontSize: "20px",}}
+					>
+					3. AR/VR
+					</Tab>
+							
+					<Tab 
+						style={{background: "#00A452", borderTopRightRadius: "10px", borderTopLeftRadius: "10px", margin: "0 2px 0 2px",
+								fontSize: "20px",}}
+					>
+					4. Web/Android
+					</Tab>
 		</TabList>
 
 		
@@ -236,44 +220,43 @@ const Timeline = () => {
 
 		<TabPanel>
 			<div className="tab-panel">
-				<h2 style={{color: "#FE4F5A", fontWeight: "bold",}}>Day 1: AI/ML, December 7th 2020</h2>
-				<hr />
+				<div className="event-day-title">
+					<h2 style={{backgroundColor: "#FE4F5A",color: "white", fontWeight: "bold",}}>Day 1: AI/ML, December 7th 2020</h2>
+				</div>
 				
-				<TimelineRow 
-					time={dayOneTimings[0]}
-					title={dayOneTitles[0]}
-					chipOneIcon={dayOneChipOneIcons[0]}
-					chipOneText={dayOneChipOneTexts[0]}
-					chipTwoIcon={dayOneChipTwoIcons[0]}
-					chipTwoText={dayOneChipTwoTexts[0]}
-				/>
+				<div className="event-rows" style={{borderColor: "#FE4F5A"}}>
+					<TimelineRow 
+						startTime={dayOneStartTimings[0]}
+						endTime={dayOneEndTimings[0]}
+						title={dayOneTitles[0]}
+						chipIcon={dayOneChipIcons[0]}
+						chipText={dayOneChipTexts[0]}
+					/>
 
-				<TimelineRow 
-					time={dayOneTimings[1]}
-					title={dayOneTitles[1]}
-					chipOneIcon={dayOneChipOneIcons[1]}
-					chipOneText={dayOneChipOneTexts[1]}
-					chipTwoIcon={dayOneChipTwoIcons[1]}
-					chipTwoText={dayOneChipTwoTexts[1]}
-				/>
+					<TimelineRow 
+						startTime={dayOneStartTimings[1]}
+						endTime={dayOneEndTimings[1]}
+						title={dayOneTitles[1]}
+						chipIcon={dayOneChipIcons[1]}
+						chipText={dayOneChipTexts[1]}
+					/>
 
-				<TimelineRow 
-					time={dayOneTimings[2]}
-					title={dayOneTitles[2]}
-					chipOneIcon={dayOneChipOneIcons[2]}
-					chipOneText={dayOneChipOneTexts[2]}
-					chipTwoIcon={dayOneChipTwoIcons[2]}
-					chipTwoText={dayOneChipTwoTexts[2]}
-				/>
+					<TimelineRow 
+						startTime={dayOneStartTimings[2]}
+						endTime={dayOneEndTimings[2]}
+						title={dayOneTitles[2]}
+						chipIcon={dayOneChipIcons[2]}
+						chipText={dayOneChipTexts[2]}
+					/>
 
-				<TimelineRow 
-					time={dayOneTimings[3]}
-					title={dayOneTitles[3]}
-					chipOneIcon={dayOneChipOneIcons[3]}
-					chipOneText={dayOneChipOneTexts[3]}
-					chipTwoIcon={dayOneChipTwoIcons[3]}
-					chipTwoText={dayOneChipTwoTexts[3]}
-				/>
+					<TimelineRow 
+						startTime={dayOneStartTimings[3]}
+						endTime={dayOneEndTimings[3]}
+						title={dayOneTitles[3]}
+						chipIcon={dayOneChipIcons[3]}
+						chipText={dayOneChipTexts[3]}
+					/>
+				</div>
 
 				
 				
@@ -284,45 +267,46 @@ const Timeline = () => {
 
 		<TabPanel>
 			<div className="tab-panel">
-				<h2 style={{color: "#FFBD00", fontWeight: "bold",}}>Day 2: Blockchain, December 8th 2020</h2>
-				<hr />
+
+			<div className="event-day-title">
+				<h2 style={{backgroundColor: "#FFBD00",color: "white", fontWeight: "bold",}}>Day 2: Blockchain, December 8th 2020</h2>
+			</div>
+				
+				<div className="event-rows" style={{borderColor: "#FFBD00"}}>
 				
 				<TimelineRow 
-					time={dayTwoTimings[0]}
-					title={dayTwoTitles[0]}
-					chipOneIcon={dayTwoChipOneIcons[0]}
-					chipOneText={dayTwoChipOneTexts[0]}
-					chipTwoIcon={dayTwoChipTwoIcons[0]}
-					chipTwoText={dayTwoChipTwoTexts[0]}
-				/>
+						startTime={dayTwoStartTimings[0]}
+						endTime={dayTwoEndTimings[0]}
+						title={dayTwoTitles[0]}
+						chipIcon={dayTwoChipIcons[0]}
+						chipText={dayTwoChipTexts[0]}
+					/>
 
-				<TimelineRow 
-					time={dayTwoTimings[1]}
-					title={dayTwoTitles[1]}
-					chipOneIcon={dayTwoChipOneIcons[1]}
-					chipOneText={dayTwoChipOneTexts[1]}
-					chipTwoIcon={dayTwoChipTwoIcons[1]}
-					chipTwoText={dayTwoChipTwoTexts[1]}
-				/>
+					<TimelineRow 
+						startTime={dayTwoStartTimings[1]}
+						endTime={dayTwoEndTimings[1]}
+						title={dayTwoTitles[1]}
+						chipIcon={dayTwoChipIcons[1]}
+						chipText={dayTwoChipTexts[1]}
+					/>
 
-				<TimelineRow 
-					time={dayTwoTimings[2]}
-					title={dayTwoTitles[2]}
-					chipOneIcon={dayTwoChipOneIcons[2]}
-					chipOneText={dayTwoChipOneTexts[2]}
-					chipTwoIcon={dayTwoChipTwoIcons[2]}
-					chipTwoText={dayTwoChipTwoTexts[2]}
-				/>
+					<TimelineRow 
+						startTime={dayTwoStartTimings[2]}
+						endTime={dayTwoEndTimings[2]}
+						title={dayTwoTitles[2]}
+						chipIcon={dayTwoChipIcons[2]}
+						chipText={dayTwoChipTexts[2]}
+					/>
 
-				<TimelineRow 
-					time={dayTwoTimings[3]}
-					title={dayTwoTitles[3]}
-					chipOneIcon={dayTwoChipOneIcons[3]}
-					chipOneText={dayTwoChipOneTexts[3]}
-					chipTwoIcon={dayTwoChipTwoIcons[3]}
-					chipTwoText={dayTwoChipTwoTexts[3]}
-				/>
-
+					<TimelineRow 
+						startTime={dayTwoStartTimings[3]}
+						endTime={dayTwoEndTimings[3]}
+						title={dayTwoTitles[3]}
+						chipIcon={dayTwoChipIcons[3]}
+						chipText={dayTwoChipTexts[3]}
+					/>
+				
+				</div>
 				
 			</div>
 		</TabPanel>
@@ -333,44 +317,44 @@ const Timeline = () => {
 		
 			<TabPanel>
 			<div className="tab-panel">
-				<h2 style={{color: "#546DDD", fontWeight: "bold",}}>Day 3: AR/VR, December 9th 2020</h2>
-				<hr />
+				<div className="event-day-title">
+					<h2 style={{backgroundColor: "#546DDD",color: "white", fontWeight: "bold",}}>Day 3: AR/VR, December 9th 2020</h2>
+				</div>
 				
+				<div className="event-rows" style={{borderColor: "#546DDD"}}>
 				<TimelineRow 
-					time={dayThreeTimings[0]}
-					title={dayThreeTitles[0]}
-					chipOneIcon={dayThreeChipOneIcons[0]}
-					chipOneText={dayThreeChipOneTexts[0]}
-					chipTwoIcon={dayThreeChipTwoIcons[0]}
-					chipTwoText={dayThreeChipTwoTexts[0]}
-				/>
+						startTime={dayThreeStartTimings[0]}
+						endTime={dayThreeEndTimings[0]}
+						title={dayThreeTitles[0]}
+						chipIcon={dayThreeChipIcons[0]}
+						chipText={dayThreeChipTexts[0]}
+					/>
 
-				<TimelineRow 
-					time={dayThreeTimings[1]}
-					title={dayThreeTitles[1]}
-					chipOneIcon={dayThreeChipOneIcons[1]}
-					chipOneText={dayThreeChipOneTexts[1]}
-					chipTwoIcon={dayThreeChipTwoIcons[1]}
-					chipTwoText={dayThreeChipTwoTexts[1]}
-				/>
+					<TimelineRow 
+						startTime={dayThreeStartTimings[1]}
+						endTime={dayThreeEndTimings[1]}
+						title={dayThreeTitles[1]}
+						chipIcon={dayThreeChipIcons[1]}
+						chipText={dayThreeChipTexts[1]}
+					/>
 
-				<TimelineRow 
-					time={dayThreeTimings[2]}
-					title={dayThreeTitles[2]}
-					chipOneIcon={dayThreeChipOneIcons[2]}
-					chipOneText={dayThreeChipOneTexts[2]}
-					chipTwoIcon={dayThreeChipTwoIcons[2]}
-					chipTwoText={dayThreeChipTwoTexts[2]}
-				/>
+					<TimelineRow 
+						startTime={dayThreeStartTimings[2]}
+						endTime={dayThreeEndTimings[2]}
+						title={dayThreeTitles[2]}
+						chipIcon={dayThreeChipIcons[2]}
+						chipText={dayThreeChipTexts[2]}
+					/>
 
-				<TimelineRow 
-					time={dayThreeTimings[3]}
-					title={dayThreeTitles[3]}
-					chipOneIcon={dayThreeChipOneIcons[3]}
-					chipOneText={dayThreeChipOneTexts[3]}
-					chipTwoIcon={dayThreeChipTwoIcons[3]}
-					chipTwoText={dayThreeChipTwoTexts[3]}
-				/>
+					<TimelineRow 
+						startTime={dayThreeStartTimings[3]}
+						endTime={dayThreeEndTimings[3]}
+						title={dayThreeTitles[3]}
+						chipIcon={dayThreeChipIcons[3]}
+						chipText={dayThreeChipTexts[3]}
+					/>
+
+				</div>
 
 				
 			</div>
@@ -383,49 +367,48 @@ const Timeline = () => {
 
 			<TabPanel>
 			<div className="tab-panel">
-				<h2 style={{color: "#00A452", fontWeight: "bold",}}>Day 4: Web/Android, December 10th 2020</h2>
-				<hr />
+				<div className="event-day-title">
+					<h2 style={{backgroundColor: "#00A452",color: "white", fontWeight: "bold",}}>Day 4: Web/Android, December 10th 2020</h2>
+				</div>
 				
+				<div className="event-rows" style={{borderColor: "#00A452"}}>
 				<TimelineRow 
-					time={dayFourTimings[0]}
-					title={dayFourTitles[0]}
-					chipOneIcon={dayFourChipOneIcons[0]}
-					chipOneText={dayFourChipOneTexts[0]}
-					chipTwoIcon={dayFourChipTwoIcons[0]}
-					chipTwoText={dayFourChipTwoTexts[0]}
-				/>
+						startTime={dayFourStartTimings[0]}
+						endTime={dayFourEndTimings[0]}
+						title={dayFourTitles[0]}
+						chipIcon={dayFourChipIcons[0]}
+						chipText={dayFourChipTexts[0]}
+					/>
 
-				<TimelineRow 
-					time={dayFourTimings[1]}
-					title={dayFourTitles[1]}
-					chipOneIcon={dayFourChipOneIcons[1]}
-					chipOneText={dayFourChipOneTexts[1]}
-					chipTwoIcon={dayFourChipTwoIcons[1]}
-					chipTwoText={dayFourChipTwoTexts[1]}
-				/>
+					<TimelineRow 
+						startTime={dayFourStartTimings[1]}
+						endTime={dayFourEndTimings[1]}
+						title={dayFourTitles[1]}
+						chipIcon={dayFourChipIcons[1]}
+						chipText={dayFourChipTexts[1]}
+					/>
 
-				<TimelineRow 
-					time={dayFourTimings[2]}
-					title={dayFourTitles[2]}
-					chipOneIcon={dayFourChipOneIcons[2]}
-					chipOneText={dayFourChipOneTexts[2]}
-					chipTwoIcon={dayFourChipTwoIcons[2]}
-					chipTwoText={dayFourChipTwoTexts[2]}
-				/>
+					<TimelineRow 
+						startTime={dayFourStartTimings[2]}
+						endTime={dayFourEndTimings[2]}
+						title={dayFourTitles[2]}
+						chipIcon={dayFourChipIcons[2]}
+						chipText={dayFourChipTexts[2]}
+					/>
 
-				<TimelineRow 
-					time={dayFourTimings[3]}
-					title={dayFourTitles[3]}
-					chipOneIcon={dayFourChipOneIcons[3]}
-					chipOneText={dayFourChipOneTexts[3]}
-					chipTwoIcon={dayFourChipTwoIcons[3]}
-					chipTwoText={dayFourChipTwoTexts[3]}
-				/>
-
+					<TimelineRow 
+						startTime={dayFourStartTimings[3]}
+						endTime={dayFourEndTimings[3]}
+						title={dayFourTitles[3]}
+						chipIcon={dayFourChipIcons[3]}
+						chipText={dayFourChipTexts[3]}
+					/>
+				</div>
 				
 			</div>
 		</TabPanel>
 	</Tabs>
+	</div>
 		</div>
 	)
 }
