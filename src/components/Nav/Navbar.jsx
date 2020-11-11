@@ -16,12 +16,25 @@ const Nav = styled.nav`
   background-color:white;
   justify-content: space-between;
 
-  img {
+  .logo {
+    padding: 1em  1em 0 2em;
+  }
+  .navbar{
     padding: 10px 1em 0 2em;
   }
   @media (max-width: 768px) {
-    img{
-      padding: 1em 0.5em 0 1em;
+    .logo{
+      float:right;
+      position:absolute;
+      right:2em;
+      top:5px; 
+      text-align:center;  
+    }
+    .navbar{
+      float:left;
+      position:absolute;
+      left:0px;
+      text-align:center;
     }
 
   }
@@ -30,14 +43,14 @@ const Nav = styled.nav`
 const Navbar = () => {
   return (
     <Nav>
-      <Row className="logo" >
-        <Col md={4} xs={10}>
+      <Row>
+        <Col md={4} xs={10} className="logo">
             <img src={dsclogo} alt = "DSC_Logo" style={{ width:"100%"}}/>
         </Col>
         {/* <Col style={{border:"1px solid red",width:"10px"}} >
           <DarkModeButton />
         </Col> */}
-        <Col xs={0} sm={0} md={{ span: 6, offset: 2 }}>
+        <Col xs={0} sm={0} md={{ span: 6, offset: 2 }} className="navbar">
           <Burger />
         </Col>
       </Row>
