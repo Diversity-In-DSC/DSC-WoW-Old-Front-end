@@ -15,6 +15,8 @@ const Nav = styled.nav`
   display: flex;
   background-color:white;
   justify-content: space-between;
+  font-family: Helvetica;
+  
 
   .logo {
     padding: 1em  1em 0 2em;
