@@ -39,54 +39,54 @@ const Speaker=()=> {
             linkedin:'https://www.linkedin.com/in/swarnim-gupta01',
             twitter:'https://twitter.com/Swarnim31645040'            
         },
-        {
-            id:5,
-            name:'Swarnim Gupta',
-            position:'Microsoft',
-            img:speaker1,
-            linkedin:'https://www.linkedin.com/in/swarnim-gupta01',
-            twitter:'https://twitter.com/Swarnim31645040'            
-        },
-        {
-            id:6,
-            name:'Swarnim Gupta',
-            position:'Microsoft',
-            img:speaker1,
-            linkedin:'https://www.linkedin.com/in/swarnim-gupta01',
-            twitter:'https://twitter.com/Swarnim31645040'            
-        },
-        {
-            id:7,
-            name:'Swarnim Gupta',
-            position:'Microsoft',
-            img:speaker1,
-            linkedin:'https://www.linkedin.com/in/swarnim-gupta01',
-            twitter:'https://twitter.com/Swarnim31645040'            
-        },
-        {
-            id:8,
-            name:'Swarnim Gupta',
-            position:'Microsoft',
-            img:speaker1,
-            linkedin:'https://www.linkedin.com/in/swarnim-gupta01',
-            twitter:'https://twitter.com/Swarnim31645040'            
-        },
-        {
-            id:9,
-            name:'Swarnim Gupta',
-            position:'Microsoft',
-            img:speaker1,
-            linkedin:'https://www.linkedin.com/in/swarnim-gupta01',
-            twitter:'https://twitter.com/Swarnim31645040'            
-        },
-        {
-            id:10,
-            name:'Swarnim Gupta',
-            position:'Microsoft',
-            img:speaker1,
-            linkedin:'https://www.linkedin.com/in/swarnim-gupta01',
-            twitter:'https://twitter.com/Swarnim31645040'            
-        },
+        // {
+        //     id:5,
+        //     name:'Swarnim Gupta',
+        //     position:'Microsoft',
+        //     img:speaker1,
+        //     linkedin:'https://www.linkedin.com/in/swarnim-gupta01',
+        //     twitter:'https://twitter.com/Swarnim31645040'            
+        // },
+        // {
+        //     id:6,
+        //     name:'Swarnim Gupta',
+        //     position:'Microsoft',
+        //     img:speaker1,
+        //     linkedin:'https://www.linkedin.com/in/swarnim-gupta01',
+        //     twitter:'https://twitter.com/Swarnim31645040'            
+        // },
+        // {
+        //     id:7,
+        //     name:'Swarnim Gupta',
+        //     position:'Microsoft',
+        //     img:speaker1,
+        //     linkedin:'https://www.linkedin.com/in/swarnim-gupta01',
+        //     twitter:'https://twitter.com/Swarnim31645040'            
+        // },
+        // {
+        //     id:8,
+        //     name:'Swarnim Gupta',
+        //     position:'Microsoft',
+        //     img:speaker1,
+        //     linkedin:'https://www.linkedin.com/in/swarnim-gupta01',
+        //     twitter:'https://twitter.com/Swarnim31645040'            
+        // },
+        // {
+        //     id:9,
+        //     name:'Swarnim Gupta',
+        //     position:'Microsoft',
+        //     img:speaker1,
+        //     linkedin:'https://www.linkedin.com/in/swarnim-gupta01',
+        //     twitter:'https://twitter.com/Swarnim31645040'            
+        // },
+        // {
+        //     id:10,
+        //     name:'Swarnim Gupta',
+        //     position:'Microsoft',
+        //     img:speaker1,
+        //     linkedin:'https://www.linkedin.com/in/swarnim-gupta01',
+        //     twitter:'https://twitter.com/Swarnim31645040'            
+        // },
     ];
     let card=[];
     card = speakers.map((i)=>{

@@ -194,9 +194,9 @@ const Timeline = () => {
 		<h1>Timeline</h1>
 	</Row>
 
-	<div className="row justify-content-center mx-auto mb-5">
-		<div className="col-7">
-			<div className="timeline">                        
+	<div className="row mb-5 justify-content-center mx-auto">
+		<div className="col-12">
+			<div className="timeline text-center">                        
 				<p style={{fontSize: "20px"}}>
 					Interested in knowing more about our DSC WOW? See the flow of our events over here:
 				</p>

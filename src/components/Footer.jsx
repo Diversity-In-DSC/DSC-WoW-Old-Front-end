@@ -22,15 +22,17 @@ function Footer() {
 
     return (
         <Container fluid className="footer-main">
-            <Row className="p-5 justify-content-center">
-                <Col md={5} xs={12}>
-                    <img 
-                        className="footer-dscLogo w-50 mb-3" 
-                        src={dscwowLogo}
-                        alt=""
-                    />
+            <Row className="pt-5 justify-content-center">
+                <Col md={5} xs={12} className="mx-sm-auto">
+                    <div className="text-center">
+                        <img 
+                            className="footer-dscLogo w-50 mb-3" 
+                            src={dscwowLogo}
+                            alt=""
+                        />
+                    </div>
 
-                    <div className="row pl-lg-4">
+                    <div className="row justify-content-center">
                         <a href="https://www.facebook.com/dscwow"
                             className="mr-4 text-dark"
                         >
@@ -64,8 +66,10 @@ function Footer() {
                         
                     </div>
                 </Col>
-                <Col md={6} xs={8} className="mt-5 mx-auto">
-                    <Row className="social-media">
+                <Col md={6} xs={8} className="mx-auto"
+                    style={{ marginTop: '7rem'}}
+                >
+                    <Row className="social-media justify-content-end">
                         <Link to="/" spy={true} smooth={true}
                             className="pr-3 text-muted"
                             onClick={toTop}

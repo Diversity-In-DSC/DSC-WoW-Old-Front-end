@@ -20,8 +20,10 @@ const Nav = styled.nav`
   .logo {
     padding: 1em  1em 0 2em;
   }
-  .navbar{
-    padding: 10px 1em 0 2em;
+  @media(min-width: 1030px) {
+    .navbar{
+      padding: 0 13em;
+    }
   }
   @media (max-width: 768px) {
     .logo{
