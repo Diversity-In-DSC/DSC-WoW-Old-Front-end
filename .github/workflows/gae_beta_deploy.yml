@@ -25,7 +25,5 @@ jobs:
       env: 
         CI: ""
       run: npm run build
-    - name: Remove older GAE app versions
-      run: bash delete-older-gcloud-app-versions.sh default 2
     - name: Deploy
       run: gcloud app deploy --project=${{ secrets.PROJECT_ID }} --quiet --no-promote
