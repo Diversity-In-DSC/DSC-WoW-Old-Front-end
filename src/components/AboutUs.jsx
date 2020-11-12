@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import aboutus from '../assets/aboutusgif12.gif';
 import { Row } from 'react-bootstrap';
-import '../css/about-us.css'
 
 class AboutUs extends Component {
     render() {
@@ -16,13 +15,8 @@ class AboutUs extends Component {
                             <img src={aboutus} alt="About Us" className="img-fluid" style={{width: "80%"}} />
                         </div>
                         <div className="col-10 col-md-5 p-md-0">
-<<<<<<< HEAD
                             <div className="about-us">
-                                <p className="mt-3">
-=======
-                            <div className="timeline">
                                 <p className="mt-3" style={{fontSize: "20px"}}>
->>>>>>> 6bcf3a059fa32468c68d3c2a46d6640825b7de28
                                     Developer Student Clubs are university based
                                     community groups for students interested in Google
                                     developer technologies. Students from all
