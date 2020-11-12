@@ -32,10 +32,10 @@ class Hero extends Component {
                     
                 </div>
                 {/* social */}
-                <a href="https://facebook.com/dscwow" className="facebook"><img alt="Facebook" src="https://img.icons8.com/color/2x/facebook-new.png" height="35" width="35" ></img></a>
+                {/* <a href="https://facebook.com/dscwow" className="facebook"><img alt="Facebook" src="https://img.icons8.com/color/2x/facebook-new.png" height="35" width="35" ></img></a>
                 <a href="https://instagram.com/dsc.wow" className="instagram"><img alt="Instagram" src="https://img.icons8.com/color/2x/instagram-new.png" height="35" width="35" ></img></a>
                 <a href="https://linkedin.com/company/dsc-wow" className="linkedin"><img alt="LinkedIn" src="https://img.icons8.com/fluent/2x/linkedin.png" height="35" width="35" ></img></a>
-                <a href="https://twitter.com/DscWow" className="twitter"><img alt="Twitter" src="https://img.icons8.com/fluent/2x/twitter.png" height="35" width="35" ></img></a>
+                <a href="https://twitter.com/DscWow" className="twitter"><img alt="Twitter" src="https://img.icons8.com/fluent/2x/twitter.png" height="35" width="35" ></img></a> */}
             </React.Fragment>
         )
     }
