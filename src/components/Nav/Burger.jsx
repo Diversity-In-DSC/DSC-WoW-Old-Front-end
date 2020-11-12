@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { Link } from 'react-scroll';
+// import { Link } from 'react-scroll';
 import styled from 'styled-components';
 import history from '../../_history';
 
 import { routeConstant } from '../../_constants';
-import RightNav from './RightNav';
+// import RightNav from './RightNav';
 
 // const StyledBurger = styled.div`
 //   width: 2.5rem;
@@ -94,14 +94,13 @@ const Ul = styled.ul`
   display: flex;
   flex-flow: row nowrap;
   cursor:pointer;
-  font-size:20px;
   text-transform:uppercase;
   li {
-    padding: 10px 10px;
+    padding: 10px;
+    text-transform: capitalize;
   }
-
   li:hover{
-    font-size: 26px;
+    color: #4285f4;
   }
 
   @media (max-width: 768px) {
@@ -198,7 +197,7 @@ const Burger = () => {
     SPEAKERS,
     SPONSORS,
     TIMELINE,
-    COLLABORATORS,
+    // COLLABORATORS,
     FAQ,
     CONTACT
   } = routeConstant
@@ -240,12 +239,12 @@ const Burger = () => {
 
     <Ul open={open} className="nav">
       <li class="nav-item" onClick={()=>handleClick(HOME)}>Home</li>
-      <li class="nav-item" onClick={()=>handleClick(ABOUT)}>About Us</li>
+      <li class="nav-item" onClick={()=>handleClick(ABOUT)}>About</li>
       <li class="nav-item" onClick={()=>handleClick(SPEAKERS)}>Speakers</li>
       <li class="nav-item" onClick={()=>handleClick(SPONSORS)}>Sponsors</li>
       <li class="nav-item" onClick={()=>handleClick(TIMELINE)}>Timeline</li>
       <li class="nav-item" onClick={()=>handleClick(FAQ)}>FAQ</li>
-      <li class="nav-item" onClick={()=>handleClick(CONTACT)}>Contact Us</li>
+      <li class="nav-item" onClick={()=>handleClick(CONTACT)}>Contact</li>
     </Ul>
     </div>
     </>

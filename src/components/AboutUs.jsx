@@ -16,7 +16,7 @@ class AboutUs extends Component {
                         </div>
                         <div className="col-10 col-md-5 p-md-0">
                             <div className="timeline">
-                                <p className="mt-3">
+                                <p className="mt-3" style={{fontSize: "20px"}}>
                                     Developer Student Clubs are university based
                                     community groups for students interested in Google
                                     developer technologies. Students from all

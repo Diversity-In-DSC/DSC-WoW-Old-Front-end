@@ -1,6 +1,7 @@
-#home, #aboutus, #speakers, #sponsors, #timeline, #faq, #contact{
-    margin-bottom: 8rem;
+body{
+    overflow-x: hidden;
+    font-family: 'Roboto Condensed', sans-serif;
 }
-#home{
-    margin-top: 5rem;
+#home, #aboutus, #speakers, #sponsors, #timeline, #faq, #contact{
+    margin: 5rem 0;
 }

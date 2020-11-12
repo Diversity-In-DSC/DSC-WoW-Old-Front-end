@@ -40,8 +40,8 @@ function Contact() {
                 <h1>Contact Us</h1>
             </Row>
 
-            <div className="row container-fluid mb-5 mt-3 px-md-5 mx-auto justify-content-center">
-                <Col md={5} className="mb-3">
+            <div className="row container-fluid mb-5 mt-3 px-md-5 mx-auto">
+                <Col md={5} className="mb-3 text-center">
                     <img src={contact} alt="Contact Us" className="img-fluid w-75" />
                 </Col>
 

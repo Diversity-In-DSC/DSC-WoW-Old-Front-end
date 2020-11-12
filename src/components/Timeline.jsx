@@ -3,9 +3,8 @@ import 'react-tabs/style/react-tabs.css';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import {  Row } from 'react-bootstrap';
 import '../css/timeline.css';
-
 import TimelineRow from './TimelineRow'
-import TimeImage from '../assets/timeline.png'
+// import TimeImage from '../assets/timeline.png'
 
 const Timeline = () => {
 
@@ -195,19 +194,14 @@ const Timeline = () => {
 		<h1>Timeline</h1>
 	</Row>
 
-	<div className="row justify-content-center">
-			<div className="col-10 col-md-5">
-					<img src={TimeImage} alt="Timeline" className="img-fluid" />
-			</div>
-			<div className="col-md-5">
-					<div className="timeline">                        
-							<br/>
-							<p>Interested in knowing more about our DSC WOW? <br/>
-									See the flow of our events over here:
-							</p>
-					</div>
-					
-			</div>
+	<div className="row mb-5 justify-content-center mx-auto">
+		<div className="col-12">
+			<div className="timeline text-center">                        
+				<p style={{fontSize: "20px"}}>
+					Interested in knowing more about our DSC WOW? See the flow of our events over here:
+				</p>
+			</div>			
+		</div>
 	</div>
 
 
