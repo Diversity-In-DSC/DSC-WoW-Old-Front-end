@@ -31,11 +31,11 @@ class Hero extends Component {
                     </div>
                     
                 </div>
-                {/* social 
-                <a href="/" className="github"><img alt="" src="https://camo.githubusercontent.com/ce676e05faf5d1d3cfa8452e3bc556555809eb74/68747470733a2f2f63646e2e737667706f726e2e636f6d2f6c6f676f732f6769746875622d69636f6e2e737667" height="35" width="35" ></img></a>
-                <a href="/" className="instagram"><img alt="" src="https://github.com/TheDudeThatCode/TheDudeThatCode/raw/master/Assets/Instagram.svg" height="35" width="35" ></img></a>
-                <a href="/" className="linkedin"><img alt="" src="https://danielletaylordotcom.files.wordpress.com/2015/12/icon-linkedin.png" height="35" width="35" ></img></a>
-                <a href="/" className="facebook"><img alt="" src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-facebook-circle-64.png" height="35" width="35" ></img></a> */}
+                {/* social */}
+                <a href="https://facebook.com/dscwow" className="facebook"><img alt="Facebook" src="https://img.icons8.com/color/2x/facebook-new.png" height="35" width="35" ></img></a>
+                <a href="https://instagram.com/dsc.wow" className="instagram"><img alt="Instagram" src="https://img.icons8.com/color/2x/instagram-new.png" height="35" width="35" ></img></a>
+                <a href="https://linkedin.com/company/dsc-wow" className="linkedin"><img alt="LinkedIn" src="https://img.icons8.com/fluent/2x/linkedin.png" height="35" width="35" ></img></a>
+                <a href="https://twitter.com/DscWow" className="twitter"><img alt="Twitter" src="https://img.icons8.com/fluent/2x/twitter.png" height="35" width="35" ></img></a>
             </React.Fragment>
         )
     }
