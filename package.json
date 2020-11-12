@@ -27,9 +27,7 @@
     "styled-components": "^5.1.0"
   },
   "scripts": {
-    "start": "serve -s build",
-    "prestart": "npm install -g serve",
-    "local": "react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject"
   },

@@ -5,10 +5,12 @@ import {
     faFacebook,
     faTwitter,
     faInstagram,
+    faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import '../css/footer.css'
 import dscwowLogo from "../assets/wow_logo.png";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
+import {Container, Row, Col} from 'react-bootstrap';
 
 function Footer() {
     function toTop() {
@@ -19,55 +21,87 @@ function Footer() {
     }
 
     return (
-        <>
-            <footer className="footer__main">
-                <div className="footer__left">
-                    <img className="footer__dscLogo" src={dscwowLogo} alt=""></img>
+        <Container fluid className="footer-main">
+            <Row className="p-5 justify-content-center">
+                <Col md={5} xs={12}>
+                    <img 
+                        className="footer-dscLogo w-50 mb-3" 
+                        src={dscwowLogo}
+                        alt=""
+                    />
 
-                    <div className="footer__media">
-
-                        <a href="https://www.facebook.com/dscwow">
-                        <FontAwesomeIcon icon={faFacebook} size="2x"/>
+                    <div className="row pl-lg-4">
+                        <a href="https://www.facebook.com/dscwow"
+                            className="mr-4 text-dark"
+                        >
+                            <FontAwesomeIcon icon={faFacebook} 
+                                className="h3"/>
                         </a>
-                        &nbsp;&nbsp;
-                        <a href="https://instagram.com/dscwow_?igshid=s66ymmaorjji">
-                        <FontAwesomeIcon icon={faInstagram} size="2x"/>
+                        <a href="https://instagram.com/dscwow_?igshid=s66ymmaorjji"
+                            className="mr-4 text-dark"
+                        >
+                            <FontAwesomeIcon icon={faInstagram}
+                                className="h3"/>
+                        </a> 
+                        <a href="https://www.linkedin.com/company/dsc-wow"
+                            className="mr-4 text-dark"
+                        >
+                            <FontAwesomeIcon icon={faLinkedin}
+                                className="h3"/>
                         </a>
-                        &nbsp;&nbsp;    
-                        <a href="https://www.linkedin.com/company/dsc-wow">
-                        <FontAwesomeIcon icon={faLinkedin} size="2x"/>
+                        <a href="https://twitter.com/DscWow?s=08"
+                            className="mr-4 text-dark"
+                        >
+                            <FontAwesomeIcon icon={faTwitter}
+                                className="h3"/>
                         </a>
-                        &nbsp;&nbsp;
-                        <a href="https://twitter.com/DscWow?s=08">
-                        <FontAwesomeIcon icon={faTwitter} size="2x"/>
+                        <a href="https://www.github.com/Diversity-In-DSC"
+                            className="mr-4 text-dark"
+                        >
+                            <FontAwesomeIcon icon={faGithub}
+                                className="h3"/>
                         </a>
                         
                     </div>
-                </div>
-                <div className="footer__right">
-                    <div className="footer__rightRight">
-                        <Link to="home" spy={true} smooth={true}>
-                            <h2>Home</h2>
+                </Col>
+                <Col md={6} xs={8} className="mt-5 mx-auto">
+                    <Row className="social-media">
+                        <Link to="/" spy={true} smooth={true}
+                            className="pr-3 text-muted"
+                            onClick={toTop}
+                        >
+                            <h4>Home</h4>
                         </Link>
-                        <Link to="timeline" spy={true} smooth={true}>
-                            <h2>Timeline</h2>
+                        <Link to="/timeline" spy={true} smooth={true}
+                            className="pr-3 text-muted"
+                            onClick={toTop}
+                        >
+                            <h4>Timeline</h4>
                         </Link>
-                    {/* </div>
-                    <div className="footer__rightLeft"> */}
-                        <Link to="speakers" spy={true} smooth={true}>
-                            <h2>Speakers</h2>
+                        <Link to="/speakers" spy={true} smooth={true}
+                            className="pr-3 text-muted"
+                            onClick={toTop}
+                        >
+                            <h4>Speakers</h4>
                         </Link>
-                        <Link to="faq" spy={true} smooth={true}>
-                            <h2>FAQ</h2>
+                        <Link to="/faq" spy={true} smooth={true}
+                            className="pr-3 text-muted"
+                            onClick={toTop}
+                        >
+                            <h4>FAQ</h4>
                         </Link>
-                    </div>
-
-                </div>
-            </footer>
+                    </Row>
+                </Col>
+            </Row>
+            <Row className="pb-4 justify-content-center">
+                <p style={{fontSize: "18px"}}>
+                    Copyright &copy; 2020 | DSC WOW
+                </p>
+            </Row>
             <div onClick={toTop} className="footer__topBtn">
                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm5.247 15l-5.247-6.44-5.263 6.44-.737-.678 6-7.322 6 7.335-.753.665z" /></svg>
             </div>
-        </>
+        </Container>
 
     )
 }

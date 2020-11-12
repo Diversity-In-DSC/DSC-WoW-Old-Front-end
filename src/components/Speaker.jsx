@@ -5,8 +5,6 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import siddhantsgarwalphoto from '../assets/siddhantagarwal.jpg';
 import biswajeetmallikphoto from '../assets/biswajeetmallik.jpeg';
 import nikitagandhiphoto from '../assets/nikitagandhiphoto.jpg';
-
-//css
 import '../css/Speaker.css'
 
 const Speaker=()=> {
@@ -137,10 +135,12 @@ const Speaker=()=> {
                                         <h1>
                                            Speakers at W.O.W 
                                         </h1>
-                                        <p>Meet the amazing speakers at our event. 
-                                We have the best of speakers lined up for you. 
-                                From Googlers to GDE's from Angular to React, 
-                                DSC W.O.W will be covering all aspects</p>
+                                        <p style={{fontSize: "20px"}}>
+                                            Meet the amazing speakers at our event. 
+                                            We have the best of speakers lined up for you. 
+                                            From Googlers to GDE's from Angular to React, 
+                                            DSC W.O.W will be covering all aspects
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -151,7 +151,7 @@ const Speaker=()=> {
 
 
 
-                <div className="container-fluid mb-5 pb-5">
+                <div className="container-fluid mb-5">
                     <div className= "row" style={{justifyContent:'center',alignItems:'center'}}>
                          <div className="col-sm-11 col-md-10 col-lg-10 col-12">
                              <div className = "container">

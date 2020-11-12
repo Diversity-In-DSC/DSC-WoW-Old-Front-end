@@ -1,86 +1,5 @@
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 50px;
-  padding-right: 100px;
-  padding-left: 100px;
+.footer-main {
   background-color: #f5f5f5;
-  padding-top: 30px;
-}
-
-h2 {
-  padding: 20px;
-  color: grey;
-  font-size: 30px;
-  font-weight: 500;
-  transition: all 0.3s ease-in-out;
-}
-
-h2:hover {
-  color: blue;
-  cursor: pointer;
-}
-
-.footer__dscLogo {
-  width: 60%;
-  margin-bottom: 15px;
-  min-width: 250px;
-  transition: all 0.2s ease-in-out;
-}
-
-.footer__dscLogo:hover {
-  opacity: 0.7;
-}
-
-.footer__wowLogo {
-  max-height: 90px;
-  min-height: 60px;
-  width: 52%;
-  transition: all 0.2s ease-in-out;
-  min-width: 200px;
-}
-
-.footer__wowLogo:hover {
-  cursor: pointer;
-  opacity: 0.7;
-}
-
-.footer__left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: auto;
-  flex: 0.5;
-}
-
-.footer__right {
-  margin-right: 90px;
-  display: flex;
-  justify-content: space-between;
-  background-size: contain;
-}
-
-.footer__rightRight {
-  display: flex;
-  /* flex-direction: column; */
-  align-items: center;
-}
-
-.footer__rightLeft {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.footer__media {
-  margin-top: 10px;
-}
-
-.footer__media > svg {
-  margin-right: 20px;
-  transition: all 0.2s ease-in-out;
-  font-size: 25px;
 }
 
 .fa-facebook:hover {
@@ -97,6 +16,11 @@ h2:hover {
 
 .fa-instagram:hover {
   color: #f77737;
+}
+
+.social-media h4:hover{
+  color: blue;
+  cursor: pointer;
 }
 
 .footer__media > svg:hover {
@@ -116,21 +40,4 @@ h2:hover {
 
 .footer__topBtn > svg:hover {
     margin-bottom: 10px;
-}
-
-@media only screen and (max-width: 765px) {
-  footer {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer__right {
-    margin: auto;
-    display: block;
-  }
-
-  h2 {
-    padding: auto;
-    font-size: auto;
-  }
 }
