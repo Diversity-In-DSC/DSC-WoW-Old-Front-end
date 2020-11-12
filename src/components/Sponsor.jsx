@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'
-import img1 from '../assets/dscbvppune.png';
+// import img1 from '../assets/dscbvppune.png';
 import devfolio from '../assets/devfolio.png'
 import gdgp from '../assets/gdg pune.png';
 import matic from '../assets/matic.png';
@@ -27,13 +27,13 @@ class Sponsor extends Component {
                                 <h1>Sponsors</h1>
                             </Row>
                             <Row className="justify-content-center">
-                                <p className="mt-3">
+                                <p className="mt-3" style={{fontSize :"20px"}}>
                                     This beautiful event wouldn’t have been possible without
                                     the support of our sponsors and partners.
                                 </p>
                             </Row>
                             
-                            <Container>
+                            {/* <Container>
                                 <div className="my-5">
                                     <Row className="justify-content-md-center">
                                         <h4 className="mb-3">Community Sponsors</h4>
@@ -42,7 +42,7 @@ class Sponsor extends Component {
                                         <img src={img1} alt="DSC BVDUCOE Pune" className="img-fluid image__DSC" />
                                     </Row>
                                 </div>
-                            </Container>
+                            </Container> */}
 
                         </div>
                     </div>
@@ -51,9 +51,9 @@ class Sponsor extends Component {
                     </div> */}
 
                     <Container className="mt-5 sponsor-img">
-                        <Row className = "justify-content-md-center mb-5">
+                        {/* <Row className = "justify-content-md-center mb-5">
                             <h4>Gold Sponsors</h4>
-                        </Row>
+                        </Row> */}
 
                         {/* ROW 1 */}
                         <Row className="justify-content-md-center mb-5">
@@ -145,7 +145,7 @@ class Sponsor extends Component {
                             </Col>       
                         </Row>
 
-                        <Row className="justify-content-md-center mb-5">
+                        <Row className="justify-content-md-center">
                             <a 
                                 className="btn btn-primary mt-5" 
                                 href="mailto:sponsorship@codeoffduty.com"
