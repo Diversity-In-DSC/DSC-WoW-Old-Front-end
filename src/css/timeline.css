@@ -8,8 +8,8 @@
 	font-size: 25px;
 }
 .timeline p{
-	font-weight: 400;
 	font-size: 20px;
+	font-weight: 400;
 }
 
 .timeline-container {
@@ -26,7 +26,7 @@
 .event-day-title {
 	color: white;
 	font-size: large;
-	margin: -9px 0 -8px 0px;
+	margin: -9px 0 -8px 0;
 }
 
 .event-rows {
@@ -37,7 +37,7 @@
 }
 
 .tab-panel {
-	margin: 0px 0 0 0px;
+	margin: 0 0 0 0;
 }
 
 .time {
