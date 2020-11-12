@@ -41,7 +41,7 @@ font-size: 23px;
   background: #0f6fee;
   color: var(--background-color);
 }
-.github{
+.twitter{
   position: fixed;
   top: 200px;
   right:20px;
@@ -64,8 +64,4 @@ font-size: 23px;
   top: 350px;
   right:20px;
   z-index: 0;
-}
-
-.dark .github{
-  filter: invert(1);
 }
