@@ -8,7 +8,7 @@ import {
     faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import '../css/footer.css'
-import dscwowLogo from "../assets/dscwowF5F5F5.gif";
+import dscwowLogo from "../assets/sdassa.gif";
 import { Link } from "react-router-dom";
 import {Container, Row, Col} from 'react-bootstrap';
 
