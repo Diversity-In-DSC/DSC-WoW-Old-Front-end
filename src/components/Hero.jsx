@@ -16,13 +16,12 @@ class Hero extends Component {
                         <div className="hero">
                             {/* <h1><i>W.O.W</i></h1> */}
                             <p className="hero-text">
-                                Well in a lay man’s perspective it is 
-                                a weeklong event consisting of a 4-day 
-                                workshop/session and a 48 hours hackathon 
-                                named code off duty. But to us developers 
-                                and tech enthusiasts this is much more 
-                                than some workshops and hackathon, it 
-                                is a place where imagination meets the technology of tomorrow
+                            In a lay man’s perspective, it is a weeklong event 
+                            consisting of a 4-day workshop/session and a 48 hours 
+                            hackathon named code off duty. But to us developers 
+                            and tech enthusiasts, this is much more than some 
+                            workshops and hackathon, it is a place where 
+                            imagination meets the technology of tomorrow
                             </p>
                             <p className="my-4">  7th December 2020 to 13th December 2020</p>
                             <button className="btn btnbadge mr-1 mr-md-5 mb-2" >Get WOW badge</button>
