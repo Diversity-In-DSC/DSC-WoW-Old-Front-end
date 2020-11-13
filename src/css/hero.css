@@ -1,13 +1,13 @@
-.hero{
+.hero {
   color: var(--heading-color);
   font-size: 25px;
 }
-.hero p{
-font-weight: 400;
-font-size: 23px;
+.hero p {
+  font-weight: 400;
+  font-size: 23px;
 }
 
-.imagehead{
+.imagehead {
   height: 75px;
   width: 750px;
   position: absolute;
@@ -28,40 +28,56 @@ font-size: 23px;
   background: #ff9800;
   color: var(--background-color);
 }
-.btnnews{
+.btnnews {
   border: 2px solid #0f6fee;
   background-color: var(--background-color);
   font-size: 18px;
   cursor: pointer;
-  border-color:#0f6fee;
-  color:#0f6fee;
+  border-color: #0f6fee;
+  color: #0f6fee;
   border-radius: 18px;
 }
 .btnnews:hover {
   background: #0f6fee;
   color: var(--background-color);
 }
-.twitter{
+
+.btnhackathon {
+  border: 2px solid#0F9D58;
+  background-color: var(--background-color);
+  font-size: 18px;
+  cursor: pointer;
+  border-color: #0f9d58;
+  color: #0f9d58;
+  border-radius: 18px;
+}
+
+.btnhackathon:hover {
+  background: #0f9d58;
+  color: var(--background-color);
+}
+
+.twitter {
   position: fixed;
   top: 200px;
-  right:20px;
+  right: 20px;
   z-index: 0;
 }
 .instagram {
   position: fixed;
   top: 250px;
-  right:20px;
+  right: 20px;
   z-index: 0;
 }
-.linkedin{
+.linkedin {
   position: fixed;
   top: 300px;
-  right:20px;
+  right: 20px;
   z-index: 0;
 }
-.facebook{
+.facebook {
   position: fixed;
   top: 350px;
-  right:20px;
+  right: 20px;
   z-index: 0;
 }
