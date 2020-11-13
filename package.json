@@ -28,7 +28,7 @@
   },
   "scripts": {
     "start": "serve -s build",
-    "prestart": "npm install -g serve",	
+    "prestart": "npm install -g serve",
     "local": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject"

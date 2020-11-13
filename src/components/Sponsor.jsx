@@ -107,7 +107,7 @@ class Sponsor extends Component {
                         <Row className="justify-content-md-center mb-5">
                             <Col xs lg="2" className="mr-lg-5">
                                 {/* FB Developer Cirles */}
-                                <a href="https://developers.facebook.com/developercircles/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.facebook.com/groups/DevCIndore/" target="_blank" rel="noopener noreferrer">
                                     <img src={fb} alt="Facebook Developer Cirles" className="img-fluid" />
                                 </a>
                             </Col>

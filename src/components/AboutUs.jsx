@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import aboutus from '../assets/aboutusgif12.gif';
 import { Row } from 'react-bootstrap';
+import Collaborators from './Collaborators'
+
 
 class AboutUs extends Component {
     render() {
@@ -36,7 +38,7 @@ class AboutUs extends Component {
                         </div>
                     </Row>
                 </div>
-
+                <Collaborators />
             </React.Fragment>
         )
     }
