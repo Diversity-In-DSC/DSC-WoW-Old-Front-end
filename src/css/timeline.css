@@ -45,9 +45,6 @@
 }
 
 
-span {
-	font-size: 22px;
-}
 
 .chip {
 	border: 0.1px solid lightgrey;
@@ -65,5 +62,41 @@ span {
 
 .buttonText {
 	font-size: 14px;
+	color: #333;
 	margin: 0 4px 0 0;
+}
+
+.schedule-tab {
+	border-color: black;
+	border-width: 2px;
+}
+
+
+.tabs{
+  margin:0 auto;
+}
+
+
+
+.tab-buttons{
+  margin-bottom:50px;
+}
+
+button{
+  margin-right:15px;
+  font-size:18px;
+  background:transparent;
+  border:none;
+  outline:none;
+  padding:10px 15px ;
+  cursor:pointer;
+  color:rgba(0,0,0,.4);
+  transition:all ease-in-out .2s;
+  border-bottom:2px solid transparent;
+  
+}
+.active{
+  border-bottom:2px solid #0005df;
+	
+  color:#0005df
 }

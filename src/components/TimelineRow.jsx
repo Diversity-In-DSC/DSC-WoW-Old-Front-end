@@ -1,58 +1,51 @@
 import React from 'react'
 import 'react-tabs/style/react-tabs.css';
 import {  Tabs, } from 'react-tabs';
-import {  Row } from 'react-bootstrap';
+import {  Row, } from 'react-bootstrap';
 
 
 
-const TimelineEvent = ({startTime,endTime,title,chipIcon,chipText}) => {
+const ScheduleRow = ({startTime,endTime,title,chipIcon,chipText}) => {
 
 
 	return (
 		<div>
-			<Tabs>
 
-				<Row>
-					<div className="col-3 col-lg-6 text-center">
-						<span className="time">
-							{startTime}
-						</span>
+		<Tabs>
+			<Row>
+				<div className="col-4 col-md-3 text-center" style={{fontSize: "20px"}} >
+						{startTime}
+				</div>
+
+				<div className="col-8 text-left">
+					<span className="title" style={{fontSize: "20px"}}>
+						{title}
+					</span>
+				</div>
+			</Row>
+		
+		<div className="chipContainer justify-content-center">
+				<Row style={{padding: "0 0 0px 0"}}>
+					<div className="col-4 col-md-3 text-center " style={{fontSize: "18px"}} >
+						{endTime}
 					</div>
 
-					<div className="col-9 col-lg-6 text-left">
-						<span className="title">
-							{title}
-						</span>
-					</div>
-				</Row>
-				
-				<div className="chipContainer justify-content-center">
-						<Row>
-							<div className="col-3 col-lg-6">
-								{endTime}
-							</div>
-
-							<div className="col-9 col-lg-6">
-								<Row className=" justify-content-left">
-									<button className="chip">
-										<img 
-											className="buttonImg" 
-											src={chipIcon} 
-											alt="icon"
-										>
-										</img>
-										<span className="buttonText">{chipText}</span>
-									</button>		
-								</Row>
-							</div>
-												
+					<div className="col-8">
+						<Row className=" justify-content-left">
+							<button className="chip">
+								<span className="buttonText">{chipText}</span>
+							</button>		
 						</Row>
 					</div>
+										
+				</Row>
+			</div>
 
-				<hr />			
-			</Tabs>
+		<hr />			
+	</Tabs>
+
 		</div>
 	)
 }
 
-export default TimelineEvent
+export default ScheduleRow
