@@ -1,17 +1,33 @@
 import React from 'react'
 import 'react-tabs/style/react-tabs.css';
-import {  Tabs, } from 'react-tabs';
 import {  Row, } from 'react-bootstrap';
+import HeadsetMicIcon from '@material-ui/icons/HeadsetMic';
 
 
-
-const ScheduleRow = ({startTime,endTime,title,chipIcon,chipText}) => {
-
+const TimelineRow = ({startTime,endTime,title,chipIcon,chipText,speaker}) => {
 
 	return (
 		<div>
+			<div className="title">
+				{title} 
+			</div>
+			<div className="subtitle">
+				{startTime} {endTime} | {speaker}
+			</div>
+			<Row>
+				<div className="chip">
+					<HeadsetMicIcon className="chipIcon"/>
+					<span className="chipText">{chipText}</span>
+				</div>
+			</Row>
+			<hr/>
+		</div>
+	)
 
-		<Tabs>
+
+{/**
+	return (
+		<div>
 			<Row>
 				<div className="col-4 col-md-3 text-center" style={{fontSize: "20px"}} >
 						{startTime}
@@ -42,10 +58,11 @@ const ScheduleRow = ({startTime,endTime,title,chipIcon,chipText}) => {
 			</div>
 
 		<hr />			
-	</Tabs>
+	
 
 		</div>
 	)
+ */}
 }
 
-export default ScheduleRow
+export default TimelineRow;

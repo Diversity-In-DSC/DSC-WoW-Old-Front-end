@@ -17,73 +17,51 @@
 	margin: 0 auto;
 }
 
-.tab-list-item {
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	margin: 0 2px 0 2px;
-}
-
-.event-day-title {
-	color: white;
-	font-size: large;
-	margin: -9px 0 -8px 0;
-}
-
-.event-rows {
-	border-right: 2px solid;
-	border-left: 2px solid;
-	border-bottom: 2px solid;
-	
-}
-
-.tab-panel {
-	margin: 0 0 0 0;
-}
-
-.time {
-	font-size: 18px;
-}
-
-
 
 .chip {
-	border: 0.1px solid lightgrey;
-	background-color: var(--background-color);
-  font-size: 14px;
-	border-radius: 15px;
-	margin: 0 2px 0 2px;
-	padding: 0 10px 0 10px;
-}
-
-.buttonImg {
-	height: 24px;
-	margin: 0 10px 0 0;
-}
-
-.buttonText {
+	border: 0.1px solid ;
 	font-size: 14px;
-	color: #333;
+	border-radius: 15px;
+	margin: 2px 2px;
+	padding: 2px 5px;
+}
+
+.chipImg {
+	height: 18px;
+	margin: 0 10px ;
+}
+
+.chipIcon {
+	height: 18px;
+	margin: 0 10px;
+}
+
+.chipText {
+	font-size: 12px;
 	margin: 0 4px 0 0;
 }
 
-.schedule-tab {
-	border-color: black;
-	border-width: 2px;
-}
-
-
 .tabs{
-  margin:0 auto;
+	margin:0 auto;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
+.title {
+	font-size: 20px;
+	font-weight: 500
+}
+
+.subtitle {
+	color: #333;
+}
 
 
 .tab-buttons{
-  margin-bottom:50px;
+  margin-bottom:20px;
 }
 
 button{
-  margin-right:15px;
+  margin-right:0px;
   font-size:18px;
   background:transparent;
   border:none;
