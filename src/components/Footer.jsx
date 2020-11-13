@@ -39,7 +39,7 @@ function Footer() {
                             <FontAwesomeIcon icon={faFacebook} 
                                 className="h3"/>
                         </a>
-                        <a href="https://instagram.com/dscwow_?igshid=s66ymmaorjji"
+                        <a href="https://instagram.com/dsc.wow"
                             className="mr-4 text-dark"
                         >
                             <FontAwesomeIcon icon={faInstagram}
