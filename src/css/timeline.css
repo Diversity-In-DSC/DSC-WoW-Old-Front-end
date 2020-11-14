@@ -43,9 +43,14 @@
 	margin: 0 4px 0 0;
 }
 
-.heading{
+.headingfortimeline{
 	font-family:google-sans,Helvetica,Arial,Sans-Serif;
 	color: blue;
+}
+
+.subheading{
+	font-family:google-sans,Helvetica,Arial,Sans-Serif;
+
 }
 
 .text{
@@ -54,7 +59,7 @@
 
 .tabs{
 	margin:0 auto;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family:google-sans,Helvetica,Arial,Sans-Serif;
 }
 
 .title {

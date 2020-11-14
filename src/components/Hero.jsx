@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import '../css/hero.css'
-import dscgroup from '../assets/dscwow1gif.gif'
+import dscgroup from '../assets/online.gif'
 
 class Hero extends Component {
     render() {
@@ -8,9 +8,7 @@ class Hero extends Component {
             <React.Fragment>
                 <div className="row container-fluid mx-auto px-md-5 justify-content-center">
                     <div className="col-12 col-md-5">
-                        <img src={dscgroup} alt="dscgroup" className="img-fluid"
-                            style={{marginTop: '-5rem'}}
-                        />
+                        <img src={dscgroup} alt="dscgroup" className="img-fluid"/>
                     </div>
                     <div className="col-10 col-md-6 p-md-0">
                         <div className="hero">

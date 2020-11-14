@@ -4,6 +4,8 @@ p {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    font-family:google-sans,Helvetica,Arial,Sans-Serif;
+
 }
 .v-avatar {
     align-items: center;
@@ -22,6 +24,12 @@ p {
     border-radius: 5px;
 }
 
+.heading
+{
+    font-size: 10px;
+	font-family:google-sans,Helvetica,Arial,Sans-Serif;
+}
+
 body {
-  font-family: 'Roboto Condensed', sans-serif;
+    font-family:google-sans,Helvetica,Arial,Sans-Serif;
 }
