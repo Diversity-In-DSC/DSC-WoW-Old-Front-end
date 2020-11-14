@@ -7,7 +7,7 @@ class Hero extends Component {
         return (
             <React.Fragment>
                 <div className="row container-fluid mx-auto px-md-5 justify-content-center">
-                    <div className="col-12 col-md-5">
+                    <div className="col-10 col-md-5">
                         <img src={dscgroup} alt="dscgroup" className="img-fluid"/>
                     </div>
                     <div className="col-10 col-md-6 p-md-0">

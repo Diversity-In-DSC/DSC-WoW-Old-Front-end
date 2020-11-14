@@ -42,3 +42,7 @@
 .footer__topBtn > svg:hover {
     margin-bottom: 10px;
 }
+
+.copyrightfont{
+  font-family:google-sans,Helvetica,Arial,Sans-Serif
+}
