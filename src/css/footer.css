@@ -21,7 +21,8 @@
 .social-media h4:hover{
   color: blue;
   cursor: pointer;
-}
+  
+}.
 
 .footer__media > svg:hover {
   cursor: pointer;
@@ -40,4 +41,8 @@
 
 .footer__topBtn > svg:hover {
     margin-bottom: 10px;
+}
+
+.copyrightfont{
+  font-family:google-sans,Helvetica,Arial,Sans-Serif
 }

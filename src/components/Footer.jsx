@@ -23,7 +23,7 @@ function Footer() {
     return (
         <Container fluid className="footer-main">
             <Row className="pt-5 justify-content-center">
-                <Col md={5} xs={12} className="mx-sm-auto">
+                <Col md={3} xs={12} className="mx-sm-auto">
                     <div className="text-center">
                         <img 
                             className="footer-dscLogo w-50 mb-3" 
@@ -74,7 +74,7 @@ function Footer() {
                             className="pr-3 text-muted"
                             onClick={toTop}
                         >
-                            <h4>Home</h4>
+                            <h4 className="social-media">Home</h4>
                         </Link>
                         <Link to="/timeline" spy={true} smooth={true}
                             className="pr-3 text-muted"
@@ -97,7 +97,7 @@ function Footer() {
                     </Row>
                 </Col>
             </Row>
-            <Row className="pb-4 justify-content-center">
+            <Row className="copyrightfont justify-content-center">
                 <p style={{fontSize: "18px"}}>
                     Copyright &copy; 2020 | DSC WOW
                 </p>

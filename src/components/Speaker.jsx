@@ -132,8 +132,8 @@ const Speaker=()=> {
                             <div className = "container my-2 container--fluid">
                                 <div className = "row align-center justify-start">
                                     <div className = "text-center col-md-12 col">
-                                        <h1>
-                                           Speakers at W.O.W 
+                                        <h1 classname="heading">
+                                           Speakers at WoW
                                         </h1>
                                         <p style={{fontSize: "20px"}}>
                                             Meet the amazing speakers at our event. 

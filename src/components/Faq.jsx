@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Faq from 'react-faq-component';
 import {Row, Col} from 'react-bootstrap';
+import '../css/faq.css'
+
 
 
 const data = {
@@ -32,7 +34,7 @@ const data = {
 export default class App extends Component {
   render() {
     return (
-      <div>
+      <div className = "faq">
       <Row className="justify-content-center">
         <Col md={8} xs={8}>
           <Faq data={data} styles={{

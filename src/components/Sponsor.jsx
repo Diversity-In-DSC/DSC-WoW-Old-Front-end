@@ -22,7 +22,7 @@ class Sponsor extends Component {
             <React.Fragment>
                 <div className="row container-fluid my-5 mx-auto px-md-5">
                     <div className="col-12 p-md-0">
-                        <div className="timeline">
+                        <div className="sponsors">
                             <Row className="justify-content-center">
                                 <h1>Sponsors</h1>
                             </Row>

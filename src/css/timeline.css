@@ -4,45 +4,93 @@
 	box-sizing: border-box;
 }
 
-.timeline {
-	max-width: 90% ;
+.timeline{
+	font-size: 20px;
+}
+.timeline p{
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.timeline-container {
+	max-width: 70% ;
 	margin: 0 auto;
 }
 
-.tab-list-item {
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	margin: 0 2px 0 2px;
-}
-
-.tab-panel {
-	margin: 20px 0 0 5px;
-}
-
-.time {
-	font-size: 18px;
-}
-
-
-span {
-	font-size: 22px;
-}
 
 .chip {
-	border: 0.1px solid lightgrey;
-	background-color: var(--background-color);
-  font-size: 14px;
-	border-radius: 15px;
-	margin: 0 2px 0 2px;
-	padding: 0 10px 0 10px;
-}
-
-.buttonImg {
-	height: 24px;
-	margin: 0 10px 0 0;
-}
-
-.buttonText {
+	border: 1px solid ;
 	font-size: 14px;
+	border-radius: 15px;
+	margin: 2px 2px 2px 10px;
+	padding: 2px 5px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.chipImg {
+	height: 18px;
+	margin: 0 10px ;
+}
+
+.chipIcon {
+	height: 18px;
+	margin: 0 10px;
+}
+
+.chipText {
+	font-size: 13px;
 	margin: 0 4px 0 0;
+}
+
+.headingfortimeline{
+	font-family:google-sans,Helvetica,Arial,Sans-Serif;
+	color: blue;
+}
+
+.subheading{
+	font-family:google-sans,Helvetica,Arial,Sans-Serif;
+
+}
+
+.text{
+	font-family:google-sans,Helvetica,Arial,Sans-Serif;
+}
+
+.tabs{
+	margin:0 auto;
+	font-family:google-sans,Helvetica,Arial,Sans-Serif;
+}
+
+.title {
+	font-size: 20px;
+	font-weight: 500;
+	font-family: sans-serif;
+}
+
+.subtitle {
+	color: #333;
+}
+
+
+.tab-buttons{
+  margin-bottom:20px;
+}
+
+button{
+  background:transparent;
+  border:none;
+  border-bottom:2px solid transparent;
+  color:rgba(0,0,0,.4);
+  cursor:pointer;
+  font-size:18px;
+  margin-right:0;
+  outline:none;
+  padding:10px 15px ;
+  transition:all ease-in-out .2s;
+}
+.active{
+  border-bottom:2px solid #0005df;
+	
+  color:#0005df
 }
