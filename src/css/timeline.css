@@ -5,15 +5,16 @@
 }
 
 .timeline{
-	font-size: 25px;
+	font-size: 20px;
 }
 .timeline p{
 	font-size: 20px;
 	font-weight: 400;
+	font-family: 'Roboto Condensed', sans-serif;
 }
 
 .timeline-container {
-	max-width: 90% ;
+	max-width: 70% ;
 	margin: 0 auto;
 }
 
@@ -24,6 +25,7 @@
 	border-radius: 15px;
 	margin: 2px 2px 2px 10px;
 	padding: 2px 5px;
+	font-family: 'Roboto Condensed', sans-serif;
 }
 
 .chipImg {
@@ -48,7 +50,8 @@
 
 .title {
 	font-size: 20px;
-	font-weight: 500
+	font-weight: 500;
+	font-family: sans-serif;
 }
 
 .subtitle {

@@ -20,11 +20,11 @@ const Timeline = () => {
 
 	<div className="row mb-5 justify-content-center mx-auto">
 		<div className="col-12">
-			<div className="timeline text-center">                        
+			<div className="timeline text-center">
 				<p style={{fontSize: "20px"}}>
 					Interested in knowing more about our DSC WOW? See the flow of our events over here:
 				</p>
-			</div>			
+			</div>
 		</div>
 	</div>
 
@@ -33,10 +33,10 @@ const Timeline = () => {
    <Tab label="Dec 7" >
      <div>
 
-        <h4 style={{ color: "#000fd5"}}>Day 1. December 7, Monday, 2020</h4>
+        {/* <h5 style={{ color: "#000fd5"}}>Day 1. December 7, Monday, 2020</h5> */}
 
         <hr/>
-				
+
 				<div>
 					<div className="title">Kickstarting the DSC WOW!</div>
 					<div className="subtitle">5:00 PM - 5:30 PM </div>
@@ -84,7 +84,7 @@ const Timeline = () => {
 					</Row>
 					<hr/>
 				</div>
-				
+
      </div>
    </Tab>
 
@@ -92,7 +92,7 @@ const Timeline = () => {
    <Tab label="Dec 8">
    <div>
 
-   <h4 style={{color: "#000fd5"}}>Day 2. December 8, Tuesday, 2020</h4>
+   {/* <h5 style={{color: "#000fd5"}}>Day 2. December 8, Tuesday, 2020</h5> */}
 
         <hr/>
 
@@ -150,10 +150,10 @@ const Timeline = () => {
  <Tab label="Dec 9">
  <div>
 
- <h4 style={{color: "#000fd5"}}>Day 3. December 9, Wednesday, 2020</h4>
+ {/* <h5 style={{color: "#000fd5"}}>Day 3. December 9, Wednesday, 2020</h5> */}
 
         <hr/>
-			
+
 
 				<div>
 				<div className="title">Keynote Speaker on AR/VR</div>
@@ -208,10 +208,10 @@ const Timeline = () => {
 
 <Tab label="Dec 10">
 <div>
-<h4 style={{ color: "#000fd5"}}>Day 4. December 10, Thursday, 2020</h4>
+{/* <h5 style={{ color: "#000fd5"}}>Day 4. December 10, Thursday, 2020</h5> */}
 
         <hr/>
-			
+
 				<div>
 				<div className="title">Keynote Speaker on Web/Android</div>
 				<div className="subtitle">5:00 PM - 5:30 PM </div>
@@ -283,7 +283,7 @@ class Tabs extends React.Component{
     this.setState({ activeTab: tab });
   };
   render(){
-    
+
     let content;
     let buttons = [];
     return (
@@ -292,17 +292,17 @@ class Tabs extends React.Component{
           buttons.push(child.props.label)
           if (child.props.label === this.state.activeTab) content = child.props.children
         })}
-         
+
         <TabButtons activeTab={this.state.activeTab} buttons={buttons} changeTab={this.changeTab}/>
         <div className="tab-content">{content}</div>
-        
+
       </div>
     );
   }
 }
 
 const TabButtons = ({buttons, changeTab, activeTab}) =>{
-   
+
   return(
     <div className="tab-buttons">
     {buttons.map(button =>{
@@ -319,5 +319,5 @@ const Tab = props =>{
     </div>
   )
 }
- 
+
 export default Timeline;
