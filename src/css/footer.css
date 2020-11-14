@@ -21,7 +21,8 @@
 .social-media h4:hover{
   color: blue;
   cursor: pointer;
-}
+  
+}.
 
 .footer__media > svg:hover {
   cursor: pointer;

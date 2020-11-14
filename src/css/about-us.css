@@ -1,7 +1,30 @@
 .about-us{
-	font-size: 25px;
+	font-size: 18px;
+	font-family:google-sans,Helvetica,Arial,Sans-Serif;
+
 }
+
+.about-us-big{
+	font-size: 25px;
+	font-family:google-sans,Helvetica,Arial,Sans-Serif;
+
+}
+
+.about-us-blue{
+	font-size: 25px;
+	font-family:google-sans,Helvetica,Arial,Sans-Serif;
+	color: blue;
+
+}
+
+.about-us-heading{
+	font-size: 40px;
+	font-family:google-sans,Helvetica,Arial,Sans-Serif;
+}
+
 .about-us p{
-	font-size: 20px;
 	font-weight: 400;
+	font-size: 18px;
+	font-family:google-sans,Helvetica,Arial,Sans-Serif;
+
 }

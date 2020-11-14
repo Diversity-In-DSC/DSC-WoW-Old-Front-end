@@ -43,6 +43,15 @@
 	margin: 0 4px 0 0;
 }
 
+.heading{
+	font-family:google-sans,Helvetica,Arial,Sans-Serif;
+	color: blue;
+}
+
+.text{
+	font-family:google-sans,Helvetica,Arial,Sans-Serif;
+}
+
 .tabs{
 	margin:0 auto;
 	font-family: Arial, Helvetica, sans-serif;

@@ -74,7 +74,7 @@ function Footer() {
                             className="pr-3 text-muted"
                             onClick={toTop}
                         >
-                            <h4>Home</h4>
+                            <h4 className="social-media">Home</h4>
                         </Link>
                         <Link to="/timeline" spy={true} smooth={true}
                             className="pr-3 text-muted"

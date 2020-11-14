@@ -15,16 +15,18 @@ const Timeline = () => {
 		<div className="timeline-container">
 
 		<div className="text-center p-md-0">
-		<h1>Timeline</h1>
+		<h1 className="heading">Timeline</h1>
 	</div>
 
 	<div className="row mb-5 justify-content-center mx-auto">
+		<div className="text">
 		<div className="col-12">
-			<div className="timeline text-center">
-				<p style={{fontSize: "20px"}}>
-					Interested in knowing more about our DSC WOW? See the flow of our events over here:
-				</p>
-			</div>
+				<div className="timeline text-center">
+					<p style={{fontSize: "20px"}}>
+						Interested in knowing more about our DSC WOW? See the flow of our events over here:
+					</p>
+				</div>
+		</div>
 		</div>
 	</div>
 
