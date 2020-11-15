@@ -39,9 +39,7 @@ class AboutUs extends Component {
                                     peer-to-peer learning environment and build solutions for
                                     local businesses and their community.
                                 </p>
-                                <button className="btn btn-primary" style={{background:"#00A452", borderRadius:"32px"}}>
-                                    Participating DSCs
-                                </button>
+                                
                             </div>
                         </div>
                     </Row>
