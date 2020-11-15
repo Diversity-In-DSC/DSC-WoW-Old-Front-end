@@ -36,14 +36,14 @@ export default class App extends Component {
     return (
       <div className = "faq">
       <Row className="justify-content-center">
-        <Col md={8} xs={8}>
+        <Col md={8} xs={9}>
           <Faq data={data} styles={{
                     bgColor: "white",
                     titleTextColor: "black",
                     rowTitleColor: "black",
-                    rowTitleTextSize: '20px',
+                    rowTitleTextSize: '16px',
                     rowContentColor: "#5b5e5b",
-                    rowContentTextSize: '19px',
+                    rowContentTextSize: '15px',
                       rowContentPaddingTop: '10px',
                       rowContentPaddingBottom: '10px',
                     arrowColor: "blue",

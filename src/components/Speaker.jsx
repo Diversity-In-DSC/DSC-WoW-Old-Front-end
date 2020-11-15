@@ -1,10 +1,10 @@
 import React from 'react';
-import speaker1 from '../assets/speaker1.jpg';
+import mrinaljain from '../assets/mrinaljain.jpg';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import siddhantsgarwalphoto from '../assets/siddhantagarwal.jpg';
 import biswajeetmallikphoto from '../assets/biswajeetmallik.jpeg';
-import nikitagandhiphoto from '../assets/nikitagandhiphoto.jpg';
+import nikitagandhiphoto from '../assets/sayakpaul.jpg';
 import '../css/Speaker.css'
 
 const Speaker=()=> {
@@ -26,18 +26,17 @@ const Speaker=()=> {
             twitter:'https://twitter.com/sidagarwal04'            
         },{
             id:3,
-            name:'Nikita Gandhi',
-            position:'Google',
+            name:'Sayak Paul',
+            position:'Google Developers Expert',
             img:nikitagandhiphoto,
-            linkedin:'https://www.linkedin.com/in/nikita-gandhi01/',
-            twitter:'https://twitter.com/Nikkitagandhi'            
+            linkedin:'https://www.linkedin.com/in/sayak-paul/',         
         },{
             id:4,
-            name:'Swarnim Gupta',
-            position:'Microsoft',
-            img:speaker1,
-            linkedin:'https://www.linkedin.com/in/swarnim-gupta01',
-            twitter:'https://twitter.com/Swarnim31645040'            
+            name:'Mrinal Jain',
+            position:'Mozilla',
+            img:mrinaljain,
+            linkedin:'https://www.linkedin.com/in/mrinaljain/',
+            twitter:'https://twitter.com/mrinal_geek'            
         },
         // {
         //     id:5,
@@ -130,11 +129,11 @@ const Speaker=()=> {
                     <div className = "row" style={{justifyContent:'center',alignItems:'center'}}>
                         <div className = "col-md-10 col">
                             <div className = "container my-2 container--fluid">
-                                <div className = "row align-center justify-start">
+                                <div>
                                     <div className = "text-center col-md-12 col">
-                                        <h1 classname="heading">
+                                        <h2>
                                            Speakers at WoW
-                                        </h1>
+                                        </h2>
                                         <p style={{fontSize: "20px"}}>
                                             Meet the amazing speakers at our event. 
                                             We have the best of speakers lined up for you. 
