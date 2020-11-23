@@ -22,11 +22,10 @@ class Hero extends Component {
                             imagination meets the technology of tomorrow
                             </p>
                             <p className="my-4">  7th December 2020 to 13th December 2020</p>
-                            <button className="btn btnbadge mr-1 mr-md-5 mb-2" >Get WOW badge</button>
+                            <button className="btn btnbadge mr-1 mr-md-5 mb-2" onclick="window.open('https://badge.dscwow.tech')">Get WOW badge</button>
                             <button className="btn btnnews mb-2" >Share the News!</button>
                         </div>
                     </div>
-                    
                 </div>
                 {/* social */}
                 <a href="https://facebook.com/dscwow" className="facebook"><img alt="Facebook" src="https://img.icons8.com/color/2x/facebook-new.png" height="35" width="35" ></img></a>
