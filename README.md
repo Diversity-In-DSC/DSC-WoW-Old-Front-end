@@ -1,3 +1,7 @@
+# Moved to new repository: https://github.com/Diversity-In-DSC/DSC-WoW-Front-end
+
+
+
 # DSC Webathon
 
 ## Frontend
